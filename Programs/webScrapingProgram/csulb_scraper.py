@@ -27,9 +27,6 @@ def main():
 
 
 
-
-
-
 def getCourses():
 	import c
 	from urllib.request import urlopen as uReq

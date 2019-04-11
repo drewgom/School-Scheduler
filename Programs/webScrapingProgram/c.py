@@ -101,7 +101,4 @@ class group:
 		self.LabInstructor = LabInstructor
 
 
-	
-
-	
 
