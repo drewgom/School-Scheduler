@@ -51,18 +51,17 @@
 
 
 class course:
-	#creates the first ID - every time a new class object is created, the class's ID becomes the static ID and then it increments it
+	# creates the first ID - every time a new class object is created, the class's ID becomes the static ID and then it increments it
 
-	staticID = 1000
+	courseID = 1000000000
 
+	# defines the constructor
 	def __init__(self,courseName,courseCode,units):
 		self.courseName = courseName
 		self.courseCode = courseCode
 		self.units = units
-		self.ID = self.staticID
-		staticID = self.staticID + 1
-
-
+		self.ID = course.courseID
+		course.courseID += 1
 
 
 
@@ -102,3 +101,7 @@ class group:
 
 
 
+class location:
+	
+
+class teacher:

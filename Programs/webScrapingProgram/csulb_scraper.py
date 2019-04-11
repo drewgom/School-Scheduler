@@ -56,10 +56,10 @@ def getCourses():
 
 	for courseBlk in tempCBL:
 
-		#This gets all the data I want to store later and puts it into a 
+		#This gets all the data I want to store later and puts it into variables
 		courseName = (courseBlk.find("span", {"class" : "courseTitle"})).text.strip()
 		courseCode = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
-		units = (courseBlk.find("span", {"class" : "units"})).text.strip()
+		units = stripUnits((courseBlk.find("span", {"class" : "units"})).text.strip())
 
 
 		listOfGroups = getGroups(courseBlk)
@@ -304,27 +304,30 @@ def getGroups(courseBlk):
 
 def printCoursesInList(listOfCourses):
 	for crse in listOfCourses:
-		print(crse.courseCode + " - " + crse.courseName + " " + crse.units + " " + str(crse.ID))
+		print(crse.courseCode + " - " + crse.courseName + " " + str(crse.units) + " " + str(crse.ID))
 
 
 
 
 
 
-def exportData(listOfCourses):
-	import csv
-
-	# everything in listOfCourses is currently an object. We need to make a 2 dimensional list where each row is a course,
-	# and each column is an attribute.
 
 
-	listForCSV = []
-
-	with open('courses.csv', 'w') as csvOfCourses:
-		csvWriter = csv.writer(csvOfCourses)
 
 
-	
+# the amount of units comes off of the website as "X Units". I would rather have this saved as
+# an int.
+
+def stripUnits(tempUnits):
+
+	tempUnits = tempUnits[0]
+	tempUnits = int(tempUnits)
+	return tempUnits
+
+
+
+
+
 
 
 
