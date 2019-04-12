@@ -19,8 +19,9 @@ List of functions:
 def main():
 	listOfCourses =  getCourses()
 	
+
 	
-	printCoursesInList(listOfCourses)
+	#printCoursesInList(listOfCourses)
 
 
 
@@ -34,12 +35,12 @@ def getCourses():
 
 
 	#saves the CECS department's shedule into a variable
-	class_url = 'http://web.csulb.edu/depts/enrollment/registration/class_schedule/Spring_2017/By_Subject/CECS.html#note1'
+	semester_url = 'http://web.csulb.edu/depts/enrollment/registration/class_schedule/Spring_2017/By_Subject/CECS.html#note1'
 
 
 
 	#opening up connection, grabbing the HTML
-	uClient = uReq(class_url)
+	uClient = uReq(semester_url)
 	page_html = uClient.read()
 	uClient.close()
 
@@ -61,7 +62,7 @@ def getCourses():
 		courseCode = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
 		units = stripUnits((courseBlk.find("span", {"class" : "units"})).text.strip())
 
-
+		print(courseName) 
 		listOfGroups = getGroups(courseBlk)
 
 
@@ -70,7 +71,7 @@ def getCourses():
 
 
 		#TO DO: add "listOfGroups" to constructor
-		tempCourse = c.course(courseName,courseCode,units)
+		tempCourse = c.course(courseName,courseCode,units,listOfGroups)
 		listOfCourses.append(tempCourse)
 
 
@@ -161,10 +162,9 @@ def getGroups(courseBlk):
 
 			# TO DO: write in an algorithm to find the start and end times.
 
-			SemStartTime = row[4].text.strip()
-			SemEndTime = row[4].text.strip()
-			SemLocation = row[6].text.strip()
-			SemInstructor = row[7].text.strip()
+			SemStartTime, SemEndTime = findTrueTime(row[4].text.strip())
+			SemLocation = c.location(row[6].text.strip())
+			SemInstructor = c.teacher(row[7].text.strip())
 
 			tempGroup = c.group(SemClassNumber, SemType, SemDays, SemStartTime, SemEndTime, SemLocation, SemInstructor)
 
@@ -195,10 +195,9 @@ def getGroups(courseBlk):
 
 		# TO DO: write in an algorithm to find the start and end times.
 
-		SemStartTime = semRow[4].text.strip()
-		SemEndTime = semRow[4].text.strip()
-		SemLocation = semRow[6].text.strip()
-		SemInstructor = semRow[7].text.strip()
+		SemStartTime, SemEndTime = findTrueTime(semRow[4].text.strip())
+		SemLocation = c.location(semRow[6].text.strip())
+		SemInstructor = c.teacher(semRow[7].text.strip())
 
 
 		LabClassNumber = labRow[0].text.strip()
@@ -207,10 +206,9 @@ def getGroups(courseBlk):
 
 		# TO DO: write in an algorithm to find the start and end times.
 
-		LabStartTime = labRow[4].text.strip()
-		LabEndTime = labRow[4].text.strip()
-		LabLocation = labRow[6].text.strip()
-		LabInstructor = labRow[7].text.strip()
+		LabStartTime, LabEndTime = findTrueTime(labRow[4].text.strip())
+		LabLocation = c.location(labRow[6].text.strip())
+		LabInstructor = c.teacher(labRow[7].text.strip())
 
 		tempGroup = c.group(SemClassNumber, SemType, SemDays, SemStartTime, SemEndTime, SemLocation, SemInstructor, LabClassNumber, LabType, LabDays, LabStartTime, LabEndTime, LabLocation, LabInstructor)
 
@@ -239,10 +237,9 @@ def getGroups(courseBlk):
 
 			# TO DO: write in an algorithm to find the start and end times.
 
-			SemStartTime = semRow[4].text.strip()
-			SemEndTime = semRow[4].text.strip()
-			SemLocation = semRow[6].text.strip()
-			SemInstructor = semRow[7].text.strip()
+			SemStartTime, SemEndTime = findTrueTime(semRow[4].text.strip())
+			SemLocation = c.location(semRow[6].text.strip())
+			SemInstructor = c.teacher(semRow[7].text.strip())
 
 
 			LabClassNumber = labRow[0].text.strip()
@@ -251,10 +248,9 @@ def getGroups(courseBlk):
 
 			# TO DO: write in an algorithm to find the start and end times.
 
-			LabStartTime = labRow[4].text.strip()
-			LabEndTime = labRow[4].text.strip()
-			LabLocation = labRow[6].text.strip()
-			LabInstructor = labRow[7].text.strip()
+			LabStartTime, LabEndTime = findTrueTime(labRow[4].text.strip())
+			LabLocation = c.location(labRow[6].text.strip())
+			LabInstructor = c.teacher(labRow[7].text.strip())
 
 			tempGroup = c.group(SemClassNumber, SemType, SemDays, SemStartTime, SemEndTime, SemLocation, SemInstructor, LabClassNumber, LabType, LabDays, LabStartTime, LabEndTime, LabLocation, LabInstructor)
 
@@ -285,17 +281,89 @@ def getGroups(courseBlk):
 
 
 
+# The times on the website are stored as one string. This needs to be seperated in to two seperate variables for later,
+# when we are trying to compare the start time and end time
+def findTrueTime(stringTime):
+
+	startTime = "Start"
+	endTime = "End"
+
+	# This code looks for the index of the "-" which delineates the start and end time.
+	i = stringTime.find("-")
+
+	# If there is no dash to be found, then that means there currently is not an assigned time
+
+	if (i == -1):
+		startTime = stringTime
+		endTime = stringTime
+
+		return startTime, endTime
+
+	else:
+		startTime = stringTime[:i]
+		endTime = stringTime[(i+1):]
+
+
+	# We now need to have our program pick the proper suffix: AM or PM.
+	# We can always do this by finding the index of "M" and then subtracting one to get the letter "A" or "P".
+
+	m = stringTime.find("M")
+
+	endSuffix = stringTime[(m-1):]
+
+
+
+	# Our challenge now is trying to figure out what hour the class starts and ends.
+	# We can search for a ":", and everything before that will be the hour of the time. However, this is not perfect since
+	# this won't happen in all cases. If there is not a ":", then we need to just find the time before either i(for start times) 
+	# or m-1 (for end times)
+
+	j = startTime.find(":")
+	k = endTime.find(":")
+
+
+
+	if (j == -1):
+		startHour = startTime
+	else:
+		startHour = startTime[:j]
+	if (k == -1):
+		endHour = endTime[:(m-1)]
+	else:
+		endHour = endTime[:k]
+
+
+	# We might run in to issues when there is a class that starts at an AM time and ends at a PM time. However,
+	# The only number that can really cause us an issue is 12 - since for all other numbers, we can run a test on whether
+	# or not the end time is less than the start time - if the end time isn't in the 12 hour, then the start time here is 
+	# always going to be less than the end time.
+
+	# Although this solution is not perfect, it will work for our case.
+
+	if (endHour == "12"):
+		if (int(startHour) < int(endHour)):
+			startSuffix = "AM"
+		else:
+			startSuffix = "PM"
+	elif (int(endHour) < int(startHour) and startHour != "12"):
+		startSuffix = "AM"
+	else:
+		startSuffix = endSuffix
+
+
+	# We now add the suffix to the start time
+
+	startTime = startTime + startSuffix
+
+	print("Start Time is " + startTime)
+	print("End Time is " + endTime)
+	return startTime, endTime
 
 
 
 
 
 
-#def findStartTime(time):
-
-
-
-#def findEndTime(time):
 
 
 
