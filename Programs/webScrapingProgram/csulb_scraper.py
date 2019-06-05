@@ -1,9 +1,13 @@
 '''
-List of functions:
-	main:
-		runs whatever you currently want the program to run
+Essential functions:
 	getCourses:
-		webscrapes the course catalog, returns a list of course objects with all the data filled out
+		- webscrapes the course catalog, returns a list of course objects with all the data filled out
+	getGroups:
+		- takes a course and returns an array of all the sections that students can sign up for
+
+
+Helpful functions:
+
 
 
 
@@ -16,28 +20,21 @@ List of functions:
 
 
 
-def main():
-	listOfCourses =  getCourses()
-	
 
-	
-	#printCoursesInList(listOfCourses)
+###############################################################################################################################
+###############################################################################################################################
+#------------------------------------------------------ESSENTIAL FUNCTIONS----------------------------------------------------#
+###############################################################################################################################
+###############################################################################################################################
 
-
-
-
-
-
-def getCourses():
+def getCourses(dpt,trm,yr):
 	import c
 	from urllib.request import urlopen as uReq
 	from bs4 import BeautifulSoup as soup
 
 
 	#saves the CECS department's shedule into a variable
-	semester_url = 'http://web.csulb.edu/depts/enrollment/registration/class_schedule/Spring_2017/By_Subject/CECS.html#note1'
-
-
+	semester_url = 'http://web.csulb.edu/depts/enrollment/registration/class_schedule/' + trm + '_' + yr + '/By_Subject/' + dpt +'.html#note1'
 
 	#opening up connection, grabbing the HTML
 	uClient = uReq(semester_url)
@@ -47,76 +44,49 @@ def getCourses():
 	#turning the page html into a soup that I can manipulate
 	page_soup = soup(page_html, "html.parser")
 
-
 	#declares the list of courses
 	listOfCourses = []
 
 	# tempCBL = a list that has every course block from the page
 	tempCBL = page_soup.findAll("div", {"class" : "courseBlock"})
 
-
 	for courseBlk in tempCBL:
 
 		#This gets all the data I want to store later and puts it into variables
+
+		# TODO: store the correct course number in the variable
+		# TODO: save every variable as the correct data type
+		school = "CSULB"
+		term = trm
+		year = yr
+		department = dpt
 		courseName = (courseBlk.find("span", {"class" : "courseTitle"})).text.strip()
-		courseCode = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
+		courseNumber = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
 		units = stripUnits((courseBlk.find("span", {"class" : "units"})).text.strip())
 
-		print(courseName) 
 		listOfGroups = getGroups(courseBlk)
-
 
 		#constructs a temporary course obejct that is the current course we just grabbed saved as an object
 
-
-
 		#TO DO: add "listOfGroups" to constructor
-		tempCourse = c.course(courseName,courseCode,units,listOfGroups)
+		tempCourse = c.course(school,term,year,department,courseName,courseNumber,units,listOfGroups)
 		listOfCourses.append(tempCourse)
-
 
 
 	return listOfCourses
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def getGroups(courseBlk):
 	import c
 
-
 	#declares the list of groups that gets returned later on
-
 	listOfGroups = []
-	
+
 	# declares isLAB
 	isLAB = False
 
 
-	# this goes through every class that does not have groups, and if it does have a lab, then it gets flagged by making isLAB false
+	# this goes through every class that does not have groups, and if it does have a lab, then it gets flagged by making isLAB true
 	if (courseBlk.find("div", {"class" : "groupMessage"}) == None):
 		
 
@@ -183,6 +153,7 @@ def getGroups(courseBlk):
 
 		semRow = table[1].findAll("td")
 		labRow = table[2].findAll("td")
+
 
 
 
@@ -268,18 +239,11 @@ def getGroups(courseBlk):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+###############################################################################################################################
+###############################################################################################################################
+#-------------------------------------------------------HELPFUL FUNCTIONS-----------------------------------------------------#
+###############################################################################################################################
+###############################################################################################################################
 
 # The times on the website are stored as one string. This needs to be seperated in to two seperate variables for later,
 # when we are trying to compare the start time and end time
@@ -355,32 +319,14 @@ def findTrueTime(stringTime):
 
 	startTime = startTime + startSuffix
 
-	print("Start Time is " + startTime)
-	print("End Time is " + endTime)
 	return startTime, endTime
 
 
-
-
-
-
-
-
-
-
-
-
 def printCoursesInList(listOfCourses):
+	
+
 	for crse in listOfCourses:
-		print(crse.courseCode + " - " + crse.courseName + " " + str(crse.units) + " " + str(crse.ID))
-
-
-
-
-
-
-
-
+		print(crse.school,crse.term,crse.year,crse.department,crse.courseNumber,crse.courseName,crse.units)
 
 
 # the amount of units comes off of the website as "X Units". I would rather have this saved as
@@ -392,16 +338,6 @@ def stripUnits(tempUnits):
 	tempUnits = int(tempUnits)
 	return tempUnits
 
-
-
-
-
-
-
-
-
-
-main()
 
 
 
