@@ -1,0 +1,331 @@
+ID,courseID,SemClassNumber,SemType,SemDays,SemStartTime,SemEndTime,SemLocation,SemInstructor,LabClassNumber,LabType,LabDays,LabStartTime,LabEndTime,LabLocation,LabInstructor
+1,1,5194,SEM,MW,8AM,8:50AM,<c.location object at 0x10a97f240>,<c.teacher object at 0x10a97f278>,5195,LAB,MW,9AM,10:15AM,<c.location object at 0x10a97f3c8>,<c.teacher object at 0x10a97f438>
+2,1,3257,SEM,MW,11AM,11:50AM,<c.location object at 0x10a97f5f8>,<c.teacher object at 0x10a97f668>,3478,LAB,MW,12PM,1:15PM,<c.location object at 0x10a97f748>,<c.teacher object at 0x10a97f860>
+3,1,5776,SEM,MW,7PM,7:50PM,<c.location object at 0x10a97fa20>,<c.teacher object at 0x10a97fa58>,5777,LAB,MW,8PM,9:15PM,<c.location object at 0x10a97fbe0>,<c.teacher object at 0x10a97fc18>
+4,1,4497,SEM,MW,8AM,8:50AM,<c.location object at 0x10a97fdd8>,<c.teacher object at 0x10a97fe48>,4498,LAB,MW,9AM,10:15AM,<c.location object at 0x10a97ff98>,<c.teacher object at 0x10a983080>
+5,1,4499,SEM,TuTh,11AM,11:50AM,<c.location object at 0x10a983240>,<c.teacher object at 0x10a9832b0>,4500,LAB,TuTh,12PM,1:15PM,<c.location object at 0x10a983390>,<c.teacher object at 0x10a9834a8>
+6,1,4799,SEM,TuTh,8AM,8:50AM,<c.location object at 0x10a983668>,<c.teacher object at 0x10a9836a0>,4800,LAB,TuTh,9AM,10:15AM,<c.location object at 0x10a9837f0>,<c.teacher object at 0x10a983860>
+7,1,5734,SEM,MW,2PM,2:50PM,<c.location object at 0x10a983a20>,<c.teacher object at 0x10a983a90>,5735,LAB,MW,3PM,4:15PM,<c.location object at 0x10a983c18>,<c.teacher object at 0x10a983c88>
+8,2,7339,SEM,F,9AM,9:50AM,<c.location object at 0x10a983dd8>,<c.teacher object at 0x10a983e10>,,,,,,,
+9,2,7340,SEM,F,10AM,10:50AM,<c.location object at 0x10a983fd0>,<c.teacher object at 0x10a983f28>,,,,,,,
+10,3,2682,SEM,M,9AM,9:50AM,<c.location object at 0x106e4e278>,<c.teacher object at 0x106e4e2e8>,,,TBA,TBA,TBA,<c.location object at 0x106e4e390>,<c.teacher object at 0x106e4e400>
+11,4,1195,SEM,MW,12PM,12:50PM,<c.location object at 0x106e4e5c0>,<c.teacher object at 0x106e4e630>,2311,LAB,MW,1PM,2:15PM,<c.location object at 0x106e4e828>,<c.teacher object at 0x106e4e860>
+12,4,3726,SEM,TuTh,12:30PM,1:20PM,<c.location object at 0x106e4ea20>,<c.teacher object at 0x106e4ea58>,3727,LAB,TuTh,1:30PM,2:45PM,<c.location object at 0x106e4ebe0>,<c.teacher object at 0x106e4ec18>
+13,4,4415,SEM,MW,10AM,10:50AM,<c.location object at 0x106e4edd8>,<c.teacher object at 0x106e4ed30>,4416,LAB,MW,11AM,12:15PM,<c.location object at 0x106e4eef0>,<c.teacher object at 0x106e4ef60>
+14,4,4501,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x106e4b1d0>,<c.teacher object at 0x106e4b240>,4502,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x106e4b3c8>,<c.teacher object at 0x106e4b438>
+15,5,8186,SEM,W,9AM,9:50AM,<c.location object at 0x106e4b5c0>,<c.teacher object at 0x106e4b630>,8187,LAB,W,10AM,11:15AM,<c.location object at 0x106e4b7b8>,<c.teacher object at 0x106e4b828>
+16,6,1196,SEM,MW,8AM,8:50AM,<c.location object at 0x106e4ba90>,<c.teacher object at 0x106e4bac8>,2312,LAB,MW,9AM,10:15AM,<c.location object at 0x106e4bc18>,<c.teacher object at 0x106e4bc88>
+17,7,8197,SEM,MW,3:30PM,4:45PM,<c.location object at 0x106e4bdd8>,<c.teacher object at 0x106e4be10>,,,,,,,
+18,8,3724,SEM,TuTh,2PM,2:50PM,<c.location object at 0x106e48080>,<c.teacher object at 0x106e480b8>,3725,LAB,TuTh,3PM,4:15PM,<c.location object at 0x106e48240>,<c.teacher object at 0x106e48278>
+19,9,10270,SEM,F,8AM,9:40AM,<c.location object at 0x106e484e0>,<c.teacher object at 0x106e48518>,10271,LAB,F,10AM,12:30PM,<c.location object at 0x106e485f8>,<c.teacher object at 0x106e48668>
+20,9,11064,SEM,MW,5PM,5:50PM,<c.location object at 0x106e48898>,<c.teacher object at 0x106e48908>,11065,LAB,MW,6PM,7:15PM,<c.location object at 0x106e48a90>,<c.teacher object at 0x106e48b00>
+21,9,10272,SEM,MW,7PM,7:50PM,<c.location object at 0x106e48cc0>,<c.teacher object at 0x106e48d30>,10273,LAB,MW,8PM,9:15PM,<c.location object at 0x106e48eb8>,<c.teacher object at 0x106e48f28>
+22,9,10274,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x106e47128>,<c.teacher object at 0x106e47160>,10275,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x106e472e8>,<c.teacher object at 0x106e47320>
+23,9,10276,SEM,MW,7PM,7:50PM,<c.location object at 0x106e474e0>,<c.teacher object at 0x106e47518>,10277,LAB,MW,8PM,9:15PM,<c.location object at 0x106e476a0>,<c.teacher object at 0x106e476d8>
+24,9,11027,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x106e47898>,<c.teacher object at 0x106e47908>,11028,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x106e47ac8>,<c.teacher object at 0x106e47b00>
+25,10,1198,SEM,MW,3PM,3:50PM,<c.location object at 0x106e47cf8>,<c.teacher object at 0x106e47d30>,2314,LAB,MW,4PM,5:15PM,<c.location object at 0x106e47eb8>,<c.teacher object at 0x106e47ef0>
+26,10,1199,SEM,TuTh,8AM,8:50AM,<c.location object at 0x106e440f0>,<c.teacher object at 0x106e44128>,2315,LAB,TuTh,9AM,10:15AM,<c.location object at 0x106e44278>,<c.teacher object at 0x106e442e8>
+27,10,5198,SEM,MW,7:30PM,8:20PM,<c.location object at 0x106e444a8>,<c.teacher object at 0x106e44518>,5199,LAB,MW,8:30PM,9:45PM,<c.location object at 0x106e446a0>,<c.teacher object at 0x106e44710>
+28,10,7083,SEM,TuTh,7:30PM,8:20PM,<c.location object at 0x106e448d0>,<c.teacher object at 0x106e44908>,7084,LAB,TuTh,8:30PM,9:45PM,<c.location object at 0x106e44a90>,<c.teacher object at 0x106e44ac8>
+29,10,8207,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x106e44c88>,<c.teacher object at 0x106e44cc0>,8208,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x106e44e48>,<c.teacher object at 0x106e44e80>
+30,11,10279,SEM,MW,3PM,3:50PM,<c.location object at 0x106e43048>,<c.teacher object at 0x106e43080>,10280,LAB,MW,4PM,5:15PM,<c.location object at 0x106e43208>,<c.teacher object at 0x106e43240>
+31,12,8418,SEM,MW,3PM,3:50PM,<c.location object at 0x106e434a8>,<c.teacher object at 0x106e434e0>,8419,LAB,MW,4PM,5:15PM,<c.location object at 0x106e43668>,<c.teacher object at 0x106e436a0>
+32,12,8896,SEM,MW,5:30PM,6:20PM,<c.location object at 0x106e43860>,<c.teacher object at 0x106e43898>,8897,LAB,MW,6:30PM,7:45PM,<c.location object at 0x106e43a20>,<c.teacher object at 0x106e43a58>
+33,12,8898,SEM,TuTh,11AM,11:50AM,<c.location object at 0x106e43c18>,<c.teacher object at 0x106e43b70>,8899,LAB,TuTh,12PM,1:15PM,<c.location object at 0x106e43d30>,<c.teacher object at 0x106e43e10>
+34,12,11025,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x106e43fd0>,<c.teacher object at 0x106e42048>,11026,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x106e42208>,<c.teacher object at 0x106e421d0>
+35,12,11066,SEM,TuTh,8AM,8:50AM,<c.location object at 0x106e423c8>,<c.teacher object at 0x106e42400>,11067,LAB,TuTh,9AM,10:15AM,<c.location object at 0x106e42550>,<c.teacher object at 0x106e425c0>
+36,13,10282,SEM,TuTh,11AM,11:50AM,<c.location object at 0x106e42748>,<c.teacher object at 0x106e426a0>,10283,LAB,TuTh,12PM,1:15PM,<c.location object at 0x106e42860>,<c.teacher object at 0x106e42940>
+37,14,4023,SEM,F,9AM,10:40AM,<c.location object at 0x106e42b00>,<c.teacher object at 0x106e42ba8>,4024,LAB,F,11AM,1:30PM,<c.location object at 0x106e42cf8>,<c.teacher object at 0x106e42da0>
+38,15,6010,SEM,TuTh,11AM,11:50AM,<c.location object at 0x106e42f98>,<c.teacher object at 0x106e40048>,6011,LAB,TuTh,12PM,1:15PM,<c.location object at 0x106e40128>,<c.teacher object at 0x106e40240>
+39,16,8357,SEM,TuTh,12:30PM,1:20PM,<c.location object at 0x106e404a8>,<c.teacher object at 0x106e404e0>,8358,LAB,TuTh,1:30PM,2:45PM,<c.location object at 0x106e40668>,<c.teacher object at 0x106e406a0>
+40,16,1200,SEM,MW,1PM,1:50PM,<c.location object at 0x106e40860>,<c.teacher object at 0x106e408d0>,2316,LAB,MW,2PM,3:15PM,<c.location object at 0x106e40a58>,<c.teacher object at 0x106e40ac8>
+41,16,3728,SEM,TuTh,5PM,5:50PM,<c.location object at 0x106e40c88>,<c.teacher object at 0x106e40cf8>,3729,LAB,TuTh,6PM,7:15PM,<c.location object at 0x106e40e80>,<c.teacher object at 0x106e40ef0>
+42,16,6158,SEM,MW,10AM,10:50AM,<c.location object at 0x106e3e0f0>,<c.teacher object at 0x106e3e160>,6159,LAB,MW,11AM,12:15PM,<c.location object at 0x106e3e240>,<c.teacher object at 0x106e3e358>
+43,17,10287,SEM,F,1PM,2:40PM,<c.location object at 0x106e3e550>,<c.teacher object at 0x106e3e588>,10288,LAB,F,3PM,5:30PM,<c.location object at 0x106e3e710>,<c.teacher object at 0x106e3e748>
+44,17,10289,SEM,TuTh,7:30PM,8:20PM,<c.location object at 0x106e3e908>,<c.teacher object at 0x106e3e940>,10290,LAB,TuTh,8:30PM,9:45PM,<c.location object at 0x106e3eac8>,<c.teacher object at 0x106e3eb00>
+45,18,4967,SEM,TuTh,8AM,8:50AM,<c.location object at 0x106e3ecf8>,<c.teacher object at 0x106e3ed30>,4968,LAB,TuTh,9AM,10:15AM,<c.location object at 0x106e3ee80>,<c.teacher object at 0x106e3eef0>
+46,18,3260,SEM,MW,10AM,10:50AM,<c.location object at 0x106e3b0f0>,<c.teacher object at 0x106e3b048>,3261,LAB,MW,11AM,12:15PM,<c.location object at 0x106e3b208>,<c.teacher object at 0x106e3b278>
+47,18,5783,SEM,MW,3PM,3:50PM,<c.location object at 0x106e3b4a8>,<c.teacher object at 0x106e3b4e0>,5784,LAB,MW,4PM,5:15PM,<c.location object at 0x106e3b668>,<c.teacher object at 0x106e3b6a0>
+48,18,6166,SEM,TuTh,2PM,2:50PM,<c.location object at 0x106e3b860>,<c.teacher object at 0x106e3b898>,6167,LAB,TuTh,3PM,4:15PM,<c.location object at 0x106e3ba20>,<c.teacher object at 0x106e3ba58>
+49,18,7092,SEM,TuTh,11AM,11:50AM,<c.location object at 0x106e3bc18>,<c.teacher object at 0x106e3bc88>,7093,LAB,TuTh,12PM,1:15PM,<c.location object at 0x106e3bd68>,<c.teacher object at 0x106e3be80>
+50,19,4028,SEM,TuTh,11AM,11:50AM,<c.location object at 0x106e39080>,<c.teacher object at 0x106e390b8>,4029,LAB,TuTh,12PM,1:15PM,<c.location object at 0x106e391d0>,<c.teacher object at 0x106e392b0>
+51,19,4801,SEM,TuTh,8AM,8:50AM,<c.location object at 0x106e39470>,<c.teacher object at 0x106e394a8>,4802,LAB,TuTh,9AM,10:15AM,<c.location object at 0x106e395f8>,<c.teacher object at 0x106e39668>
+52,19,5781,SEM,TuTh,7:30PM,8:20PM,<c.location object at 0x106e39828>,<c.teacher object at 0x106e39898>,5782,LAB,TuTh,8:30PM,9:45PM,<c.location object at 0x106e39a20>,<c.teacher object at 0x106e39a90>
+53,19,8249,SEM,MW,5PM,5:50PM,<c.location object at 0x106e39c50>,<c.teacher object at 0x106e39cc0>,8250,LAB,MW,6PM,7:15PM,<c.location object at 0x106e39e48>,<c.teacher object at 0x106e39eb8>
+54,19,7096,SEM,F,10AM,11:40AM,<c.location object at 0x106e38080>,<c.teacher object at 0x106e38128>,7097,LAB,F,12PM,2:30PM,<c.location object at 0x106e38208>,<c.teacher object at 0x106e38320>
+55,20,10292,SEM,TuTh,8AM,8:50AM,<c.location object at 0x106e384a8>,<c.teacher object at 0x106e384e0>,10293,LAB,TuTh,9AM,10:15AM,<c.location object at 0x106e38630>,<c.teacher object at 0x106e386a0>
+56,21,8947,SEM,F,10AM,11:40AM,<c.location object at 0x106e38898>,<c.teacher object at 0x106e38908>,8948,LAB,F,12PM,2:45PM,<c.location object at 0x106e389e8>,<c.teacher object at 0x106e38b00>
+57,22,1201,SEM,MW,3PM,3:50PM,<c.location object at 0x106e38d68>,<c.teacher object at 0x106e38da0>,2317,LAB,MW,4PM,5:15PM,<c.location object at 0x106e38f28>,<c.teacher object at 0x106e38f60>
+58,22,5640,SEM,TuTh,2PM,2:50PM,<c.location object at 0x10a984160>,<c.teacher object at 0x10a984198>,7111,LAB,TuTh,3PM,4:15PM,<c.location object at 0x10a984320>,<c.teacher object at 0x10a984358>
+59,23,10294,SEM,TuTh,2PM,2:50PM,<c.location object at 0x10a9844e0>,<c.teacher object at 0x10a984518>,10295,LAB,TuTh,3PM,4:15PM,<c.location object at 0x10a9846a0>,<c.teacher object at 0x10a9846d8>
+60,24,3835,SEM,TuTh,5PM,5:50PM,<c.location object at 0x10a984940>,<c.teacher object at 0x10a984978>,3836,LAB,TuTh,6PM,7:15PM,<c.location object at 0x10a984b00>,<c.teacher object at 0x10a984b38>
+61,25,1202,SEM,MW,10AM,10:50AM,<c.location object at 0x10a984d30>,<c.teacher object at 0x10a984da0>,2318,LAB,MW,11AM,12:15PM,<c.location object at 0x10a984e80>,<c.teacher object at 0x10a984f98>
+62,25,1203,SEM,TuTh,11AM,11:50AM,<c.location object at 0x10a985198>,<c.teacher object at 0x10a9850f0>,2319,LAB,TuTh,12PM,1:15PM,<c.location object at 0x10a9852b0>,<c.teacher object at 0x10a985390>
+63,25,6492,SEM,TuTh,2PM,2:50PM,<c.location object at 0x10a985550>,<c.teacher object at 0x10a985588>,6493,LAB,TuTh,3PM,4:15PM,<c.location object at 0x10a985710>,<c.teacher object at 0x10a985748>
+64,25,7115,SEM,MW,5PM,5:50PM,<c.location object at 0x10a985908>,<c.teacher object at 0x10a985978>,7116,LAB,MW,6PM,7:15PM,<c.location object at 0x10a985b00>,<c.teacher object at 0x10a985b70>
+65,25,8254,SEM,MW,6:30PM,7:20PM,<c.location object at 0x10a985d30>,<c.teacher object at 0x10a985da0>,8255,LAB,MW,7:30PM,8:45PM,<c.location object at 0x10a985f28>,<c.teacher object at 0x10a985f98>
+66,26,1204,SEM,TuTh,7:30PM,8:20PM,<c.location object at 0x10a9871d0>,<c.teacher object at 0x10a987208>,2320,LAB,TuTh,8:30PM,9:45PM,<c.location object at 0x10a987390>,<c.teacher object at 0x10a9873c8>
+67,26,1205,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a987588>,<c.teacher object at 0x10a9875f8>,2321,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a9877b8>,<c.teacher object at 0x10a9877f0>
+68,26,5708,SEM,TuTh,5PM,5:50PM,<c.location object at 0x10a9879b0>,<c.teacher object at 0x10a987a20>,5709,LAB,TuTh,6PM,7:15PM,<c.location object at 0x10a987ba8>,<c.teacher object at 0x10a987c18>
+69,26,6169,SEM,MW,12PM,12:50PM,<c.location object at 0x10a987d30>,<c.teacher object at 0x10a987da0>,6170,LAB,MW,1PM,2:15PM,<c.location object at 0x10a987f98>,<c.teacher object at 0x10a987fd0>
+70,27,4063,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x10a989208>,<c.teacher object at 0x10a989278>,4064,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x10a989400>,<c.teacher object at 0x10a989470>
+71,27,6012,SEM,MW,10AM,10:50AM,<c.location object at 0x10a989630>,<c.teacher object at 0x10a9896a0>,6013,LAB,MW,11AM,12:15PM,<c.location object at 0x10a989780>,<c.teacher object at 0x10a989898>
+72,27,7237,SEM,TuTh,12:30PM,1:20PM,<c.location object at 0x10a989a58>,<c.teacher object at 0x10a989a90>,7238,LAB,TuTh,1:30PM,2:45PM,<c.location object at 0x10a989c18>,<c.teacher object at 0x10a989c50>
+73,28,1206,SEM,TuTh,5PM,5:50PM,<c.location object at 0x10a989e48>,<c.teacher object at 0x10a989e80>,2322,LAB,TuTh,6PM,7:15PM,<c.location object at 0x10a98a048>,<c.teacher object at 0x10a98a080>
+74,28,10245,SEM,MW,10AM,10:50AM,<c.location object at 0x10a98a240>,<c.teacher object at 0x10a98a198>,10246,LAB,MW,11AM,12:15PM,<c.location object at 0x10a98a358>,<c.teacher object at 0x10a98a3c8>
+75,28,1207,SEM,MW,1PM,1:50PM,<c.location object at 0x10a98a5f8>,<c.teacher object at 0x10a98a630>,2323,LAB,MW,2PM,3:15PM,<c.location object at 0x10a98a7b8>,<c.teacher object at 0x10a98a7f0>
+76,28,6171,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x10a98a9b0>,<c.teacher object at 0x10a98a9e8>,6172,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x10a98ab70>,<c.teacher object at 0x10a98aba8>
+77,28,7117,SEM,F,11AM,12:40PM,<c.location object at 0x10a98acc0>,<c.teacher object at 0x10a98ad30>,7118,LAB,F,1PM,3:30PM,<c.location object at 0x10a98af28>,<c.teacher object at 0x10a98af60>
+78,28,8259,SEM,MW,5:30PM,6:20PM,<c.location object at 0x10a98e160>,<c.teacher object at 0x10a98e1d0>,8260,LAB,MW,6:30PM,7:45PM,<c.location object at 0x10a98e358>,<c.teacher object at 0x10a98e3c8>
+79,29,10296,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x10a98e550>,<c.teacher object at 0x10a98e588>,10298,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x10a98e710>,<c.teacher object at 0x10a98e748>
+80,30,3758,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a98e9b0>,<c.teacher object at 0x10a98e9e8>,3759,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a98eba8>,<c.teacher object at 0x10a98eb70>
+81,30,11061,SEM,TuTh,11AM,11:50AM,<c.location object at 0x10a98ed68>,<c.teacher object at 0x10a98edd8>,11062,LAB,TuTh,12PM,1:15PM,<c.location object at 0x10a98eeb8>,<c.teacher object at 0x10a98efd0>
+82,30,3804,SEM,MW,11AM,11:50AM,<c.location object at 0x10a9901d0>,<c.teacher object at 0x10a990240>,3805,LAB,MW,12PM,1:15PM,<c.location object at 0x10a990320>,<c.teacher object at 0x10a990438>
+83,30,10247,SEM,MW,3PM,3:50PM,<c.location object at 0x10a9905f8>,<c.teacher object at 0x10a990630>,10248,LAB,MW,4PM,5:15PM,<c.location object at 0x10a9907b8>,<c.teacher object at 0x10a9907f0>
+84,30,10249,SEM,TuTh,6PM,6:50PM,<c.location object at 0x10a9909b0>,<c.teacher object at 0x10a9909e8>,10250,LAB,TuTh,7PM,8:15PM,<c.location object at 0x10a990b70>,<c.teacher object at 0x10a990ba8>
+85,30,10989,SEM,MW,8AM,8:50AM,<c.location object at 0x10a990d68>,<c.teacher object at 0x10a990dd8>,10990,LAB,MW,9AM,10:15AM,<c.location object at 0x10a990f28>,<c.teacher object at 0x10a990fd0>
+86,31,7119,SEM,MW,5:30PM,6:20PM,<c.location object at 0x10a991208>,<c.teacher object at 0x10a991240>,7120,LAB,MW,6:30PM,7:45PM,<c.location object at 0x10a9913c8>,<c.teacher object at 0x10a991400>
+87,31,5482,SEM,MW,7PM,7:50PM,<c.location object at 0x10a9915c0>,<c.teacher object at 0x10a9915f8>,5483,LAB,MW,8PM,9:15PM,<c.location object at 0x10a991780>,<c.teacher object at 0x10a9917b8>
+88,31,6319,SEM,MW,6:30PM,7:20PM,<c.location object at 0x10a991978>,<c.teacher object at 0x10a9919e8>,6320,LAB,MW,7:30PM,8:45PM,<c.location object at 0x10a991b70>,<c.teacher object at 0x10a991be0>
+89,31,8268,SEM,F,1PM,2:40PM,<c.location object at 0x10a991da0>,<c.teacher object at 0x10a991dd8>,8269,LAB,F,3PM,5:30PM,<c.location object at 0x10a991f60>,<c.teacher object at 0x10a991f98>
+90,32,5167,SEM,F,9AM,10:40AM,<c.location object at 0x10a994128>,<c.teacher object at 0x10a9941d0>,5168,LAB,F,11AM,1:45PM,<c.location object at 0x10a994320>,<c.teacher object at 0x10a9943c8>
+91,33,4070,SEM,TuTh,12:30PM,1:20PM,<c.location object at 0x10a9945c0>,<c.teacher object at 0x10a994630>,4071,LAB,TuTh,1:30PM,2:45PM,<c.location object at 0x10a9947b8>,<c.teacher object at 0x10a994828>
+92,34,7535,SEM,MW,3PM,3:50PM,<c.location object at 0x10a994a20>,<c.teacher object at 0x10a994a58>,7536,LAB,MW,4PM,5:15PM,<c.location object at 0x10a994be0>,<c.teacher object at 0x10a994c18>
+93,35,7128,SEM,TuTh,3:30PM,4:20PM,<c.location object at 0x10a994e10>,<c.teacher object at 0x10a994e48>,7129,LAB,TuTh,4:30PM,5:45PM,<c.location object at 0x10a994fd0>,<c.teacher object at 0x10a995048>
+94,36,4917,SEM,TuTh,9:30AM,10:45AM,<c.location object at 0x10a995208>,<c.teacher object at 0x10a995278>,,,,,,,
+95,37,8271,SEM,MW,5PM,5:50PM,<c.location object at 0x10a995518>,<c.teacher object at 0x10a995550>,8272,LAB,MW,6PM,7:15PM,<c.location object at 0x10a9956d8>,<c.teacher object at 0x10a995710>
+96,37,8273,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a9958d0>,<c.teacher object at 0x10a995908>,8274,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a995ac8>,<c.teacher object at 0x10a995a90>
+97,37,10266,SEM,F,1PM,2:40PM,<c.location object at 0x10a995c88>,<c.teacher object at 0x10a995cc0>,10267,LAB,F,3PM,5:30PM,<c.location object at 0x10a995e48>,<c.teacher object at 0x10a995e80>
+98,38,10299,SEM,MW,5PM,5:50PM,<c.location object at 0x10a998048>,<c.teacher object at 0x10a998080>,10300,LAB,MW,6PM,7:15PM,<c.location object at 0x10a998208>,<c.teacher object at 0x10a998240>
+99,39,5369,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a998438>,<c.teacher object at 0x10a998470>,5370,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a998630>,<c.teacher object at 0x10a9985f8>
+100,40,10924,SEM,MW,11AM,11:50AM,<c.location object at 0x10a998898>,<c.teacher object at 0x10a9987f0>,10925,LAB,MW,12PM,1:15PM,<c.location object at 0x10a9989b0>,<c.teacher object at 0x10a998a90>
+101,40,10982,SEM,TuTh,12:30PM,1:20PM,<c.location object at 0x10a998c50>,<c.teacher object at 0x10a998c88>,10983,LAB,TuTh,1:30PM,2:45PM,<c.location object at 0x10a998e10>,<c.teacher object at 0x10a998e48>
+102,41,10926,SEM,MW,11AM,11:50AM,<c.location object at 0x10a99a048>,<c.teacher object at 0x10a99a080>,10927,LAB,MW,12PM,1:15PM,<c.location object at 0x10a99a198>,<c.teacher object at 0x10a99a278>
+103,42,8949,SEM,F,10AM,11:40AM,<c.location object at 0x10a99a400>,<c.teacher object at 0x10a99a470>,8950,LAB,F,12PM,2:45PM,<c.location object at 0x10a99a550>,<c.teacher object at 0x10a99a668>
+104,43,8984,SEM,TuTh,11AM,11:50AM,<c.location object at 0x10a99a860>,<c.teacher object at 0x10a99a8d0>,8985,LAB,TuTh,12PM,1:15PM,<c.location object at 0x10a99a9b0>,<c.teacher object at 0x10a99aac8>
+105,44,10930,SEM,MW,10AM,10:50AM,<c.location object at 0x10a99ad30>,<c.teacher object at 0x10a99ada0>,10931,LAB,MW,11AM,12:15PM,<c.location object at 0x10a99ae80>,<c.teacher object at 0x10a99af98>
+106,45,10809,SEM,F,9AM,10:40AM,<c.location object at 0x10a99b198>,<c.teacher object at 0x10a99b208>,10810,LAB,F,11AM,1:45PM,<c.location object at 0x10a99b358>,<c.teacher object at 0x10a99b3c8>
+107,46,5638,SEM,TuTh,6PM,6:50PM,<c.location object at 0x10a99b550>,<c.teacher object at 0x10a99b588>,5639,LAB,TuTh,7PM,8:15PM,<c.location object at 0x10a99b710>,<c.teacher object at 0x10a99b748>
+108,47,11120,SEM,TuTh,6PM,6:50PM,<c.location object at 0x10a99b940>,<c.teacher object at 0x10a99b978>,11121,LAB,TuTh,7PM,8:15PM,<c.location object at 0x10a99bb00>,<c.teacher object at 0x10a99bb38>
+109,48,5667,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a99bd30>,<c.teacher object at 0x10a99bda0>,5668,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a99bf60>,<c.teacher object at 0x10a99bf98>
+110,49,4209,SEM,MW,4PM,4:50PM,<c.location object at 0x10a99d1d0>,<c.teacher object at 0x10a99d208>,7464,LAB,MW,5PM,6:15PM,<c.location object at 0x10a99d390>,<c.teacher object at 0x10a99d3c8>
+111,50,6020,SEM,MW,1PM,1:50PM,<c.location object at 0x10a99d5c0>,<c.teacher object at 0x10a99d5f8>,6021,LAB,MW,2PM,3:15PM,<c.location object at 0x10a99d780>,<c.teacher object at 0x10a99d7b8>
+112,51,1208,SEM,TuTh,8AM,8:50AM,<c.location object at 0x10a99da20>,<c.teacher object at 0x10a99da58>,2324,LAB,TuTh,9AM,10:15AM,<c.location object at 0x10a99dba8>,<c.teacher object at 0x10a99dc18>
+113,51,5381,SEM,TuTh,2PM,2:50PM,<c.location object at 0x10a99ddd8>,<c.teacher object at 0x10a99de10>,5490,LAB,TuTh,3PM,4:15PM,<c.location object at 0x10a99df98>,<c.teacher object at 0x10a99dfd0>
+114,52,4066,SEM,TuTh,5PM,5:50PM,<c.location object at 0x10a99e198>,<c.teacher object at 0x10a99e1d0>,4067,LAB,TuTh,6PM,7:15PM,<c.location object at 0x10a99e358>,<c.teacher object at 0x10a99e390>
+115,53,8889,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a99e588>,<c.teacher object at 0x10a99e5c0>,8890,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a99e780>,<c.teacher object at 0x10a99e748>
+116,54,7126,SEM,MW,1PM,1:50PM,<c.location object at 0x10a99e978>,<c.teacher object at 0x10a99e9b0>,7127,LAB,MW,2PM,3:15PM,<c.location object at 0x10a99eb38>,<c.teacher object at 0x10a99eb70>
+117,55,4974,SEM,MW,7PM,7:50PM,<c.location object at 0x10a99edd8>,<c.teacher object at 0x10a99ee10>,7125,LAB,MW,8PM,9:15PM,<c.location object at 0x10a99ef98>,<c.teacher object at 0x10a99efd0>
+118,55,10337,SEM,TuTh,5PM,5:50PM,<c.location object at 0x10a9a11d0>,<c.teacher object at 0x10a9a1208>,10338,LAB,TuTh,6PM,7:15PM,<c.location object at 0x10a9a1390>,<c.teacher object at 0x10a9a13c8>
+119,56,8306,SEM,MW,1PM,1:50PM,<c.location object at 0x10a9a1550>,<c.teacher object at 0x10a9a1588>,8307,LAB,MW,2PM,3:15PM,<c.location object at 0x10a9a1710>,<c.teacher object at 0x10a9a1748>
+120,57,8308,SEM,TuTh,5PM,5:50PM,<c.location object at 0x10a9a19b0>,<c.teacher object at 0x10a9a19e8>,8309,LAB,TuTh,6PM,7:15PM,<c.location object at 0x10a9a1b70>,<c.teacher object at 0x10a9a1ba8>
+121,57,10268,SEM,MW,3PM,3:50PM,<c.location object at 0x10a9a1d68>,<c.teacher object at 0x10a9a1da0>,10269,LAB,MW,4PM,5:15PM,<c.location object at 0x10a9a1f28>,<c.teacher object at 0x10a9a1f60>
+122,58,7376,SEM,TuTh,7:30PM,8:20PM,<c.location object at 0x10a9a4128>,<c.teacher object at 0x10a9a4160>,7377,LAB,TuTh,8:30PM,9:45PM,<c.location object at 0x10a9a42e8>,<c.teacher object at 0x10a9a4320>
+123,59,10303,SEM,MW,9AM,9:50AM,<c.location object at 0x10a9a4518>,<c.teacher object at 0x10a9a4550>,10304,LAB,MW,10AM,11:15AM,<c.location object at 0x10a9a46d8>,<c.teacher object at 0x10a9a4630>
+124,60,8775,SEM,M,7:30PM,8:20PM,<c.location object at 0x10a9a4898>,<c.teacher object at 0x10a9a4908>,,,,,,,
+125,61,11083,SUP,TBA,TBA,TBA,<c.location object at 0x10a9a4ac8>,<c.teacher object at 0x10a9a4b00>,,,,,,,
+126,62,4918,SEM,TuTh,9:30AM,10:45AM,<c.location object at 0x10a9a4cf8>,<c.teacher object at 0x10a9a4d68>,,,,,,,
+127,63,8333,SEM,TuTh,12:30PM,1:45PM,<c.location object at 0x10a9a4f60>,<c.teacher object at 0x10a9a4f98>,,,,,,,
+128,63,10349,SEM,TuTh,5PM,6:15PM,<c.location object at 0x10a9a7198>,<c.teacher object at 0x10a9a71d0>,,,,,,,
+129,64,4599,SEM,TuTh,12:30PM,1:45PM,<c.location object at 0x10a9a73c8>,<c.teacher object at 0x10a9a7438>,,,,,,,
+130,65,3863,SEM,MW,12:30PM,1:45PM,<c.location object at 0x10a9a7630>,<c.teacher object at 0x10a9a76a0>,,,,,,,
+131,65,6192,SEM,F,10AM,12:45PM,<c.location object at 0x10a9a77b8>,<c.teacher object at 0x10a9a7828>,,,,,,,
+132,66,10339,SEM,MW,5:30PM,6:20PM,<c.location object at 0x10a9a7ac8>,<c.teacher object at 0x10a9a7b00>,10340,LAB,MW,6:30PM,7:45PM,<c.location object at 0x10a9a7c88>,<c.teacher object at 0x10a9a7cc0>
+133,67,10341,SEM,MW,5PM,6:15PM,<c.location object at 0x10a9a7e80>,<c.teacher object at 0x10a9a7ef0>,,,,,,,
+134,67,10342,SEM,TuTh,2PM,3:15PM,<c.location object at 0x10a9a80f0>,<c.teacher object at 0x10a9a8160>,,,,,,,
+135,68,4514,SEM,TuTh,7:30PM,8:45PM,<c.location object at 0x10a9a8358>,<c.teacher object at 0x10a9a8390>,,,,,,,
+136,69,10718,SEM,MW,3:30PM,4:45PM,<c.location object at 0x10a9a8588>,<c.teacher object at 0x10a9a85f8>,,,,,,,
+137,70,8373,SEM,TuTh,9:30AM,10:20AM,<c.location object at 0x10a9a8828>,<c.teacher object at 0x10a9a8898>,8372,LAB,TuTh,10:30AM,11:45AM,<c.location object at 0x10a9a8a58>,<c.teacher object at 0x10a9a8a90>
+138,71,8829,SEM,Sa,10AM,12:45PM,<c.location object at 0x10a9a8ba8>,<c.teacher object at 0x10a9a8c18>,,,,,,,
+139,71,8831,SEM,Sa,1PM,3:45PM,<c.location object at 0x10a9a8e48>,<c.teacher object at 0x10a9a8e80>,,,,,,,
+140,72,8336,SEM,TuTh,6:30PM,7:45PM,<c.location object at 0x10a9aa0b8>,<c.teacher object at 0x10a9aa0f0>,,,,,,,
+141,73,10347,SEM,TuTh,5PM,6:15PM,<c.location object at 0x10a9aa2e8>,<c.teacher object at 0x10a9aa320>,,,,,,,
+142,74,10814,SEM,F,2PM,4:45PM,<c.location object at 0x10a9aa518>,<c.teacher object at 0x10a9aa550>,,,,,,,
+143,75,8334,SEM,TuTh,12:30PM,1:45PM,<c.location object at 0x10a9aa748>,<c.teacher object at 0x10a9aa780>,,,,,,,
+144,75,10350,SEM,TuTh,5PM,6:15PM,<c.location object at 0x10a9aa940>,<c.teacher object at 0x10a9aa978>,,,,,,,
+145,76,4600,SEM,TuTh,12:30PM,1:45PM,<c.location object at 0x10a9aab70>,<c.teacher object at 0x10a9aabe0>,,,,,,,
+146,77,3864,SEM,MW,12:30PM,1:45PM,<c.location object at 0x10a9aadd8>,<c.teacher object at 0x10a9aae48>,,,,,,,
+147,77,6194,SEM,F,10AM,12:45PM,<c.location object at 0x10a9aafd0>,<c.teacher object at 0x10a9ad048>,,,,,,,
+148,78,10343,SEM,MW,5PM,6:15PM,<c.location object at 0x10a9ad278>,<c.teacher object at 0x10a9ad2e8>,,,,,,,
+149,78,10344,SEM,TuTh,2PM,3:15PM,<c.location object at 0x10a9ad4a8>,<c.teacher object at 0x10a9ad518>,,,,,,,
+150,79,4515,SEM,TuTh,7:30PM,8:45PM,<c.location object at 0x10a9ad710>,<c.teacher object at 0x10a9ad748>,,,,,,,
+151,80,10719,SEM,MW,3:30PM,4:45PM,<c.location object at 0x10a9ad940>,<c.teacher object at 0x10a9ad9b0>,,,,,,,
+152,81,8830,SEM,Sa,10AM,12:45PM,<c.location object at 0x10a9adb00>,<c.teacher object at 0x10a9adb70>,,,,,,,
+153,81,8832,SEM,Sa,1PM,3:45PM,<c.location object at 0x10a9adda0>,<c.teacher object at 0x10a9addd8>,,,,,,,
+154,82,8337,SEM,TuTh,6:30PM,7:45PM,<c.location object at 0x10a9adfd0>,<c.teacher object at 0x10a9b0048>,,,,,,,
+155,83,10815,SEM,F,2PM,4:45PM,<c.location object at 0x10a9b0240>,<c.teacher object at 0x10a9b0278>,,,,,,,
+156,84,6624,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b0438>,<c.teacher object at 0x10a9b0470>,,,,,,,
+157,84,7638,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b05f8>,<c.teacher object at 0x10a9b0630>,,,,,,,
+158,84,7639,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b07b8>,<c.teacher object at 0x10a9b07f0>,,,,,,,
+159,84,11093,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b0978>,<c.teacher object at 0x10a9b09b0>,,,,,,,
+160,85,1220,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b0b70>,<c.teacher object at 0x10a9b0ba8>,,,,,,,
+161,85,6623,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b0d30>,<c.teacher object at 0x10a9b0d68>,,,,,,,
+162,85,7640,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b0ef0>,<c.teacher object at 0x10a9b0f28>,,,,,,,
+163,85,11339,SUP,TBA,TBA,TBA,<c.location object at 0x10a9b10f0>,<c.teacher object at 0x10a9b1128>,,,,,,,
+164,86,4549,,1,SEM,SEM,<c.location object at 0x10b4e5fd0>,<c.teacher object at 0x10b4ef048>,4550,,1,LAB,LAB,<c.location object at 0x10b4ef128>,<c.teacher object at 0x10b4ef160>
+165,86,2997,,1,SEM,SEM,<c.location object at 0x10b4ef278>,<c.teacher object at 0x10b4ef2b0>,3189,,1,LAB,LAB,<c.location object at 0x10b4ef390>,<c.teacher object at 0x10b4ef3c8>
+166,86,4990,,1,SEM,SEM,<c.location object at 0x10b4ef4e0>,<c.teacher object at 0x10b4ef518>,4991,,1,LAB,LAB,<c.location object at 0x10b4ef5f8>,<c.teacher object at 0x10b4ef630>
+167,86,4013,,1,SEM,SEM,<c.location object at 0x10b4ef748>,<c.teacher object at 0x10b4ef780>,4014,,1,LAB,LAB,<c.location object at 0x10b4ef860>,<c.teacher object at 0x10b4ef898>
+168,86,4952,,1,SEM,SEM,<c.location object at 0x10b4ef9b0>,<c.teacher object at 0x10b4ef9e8>,4953,,1,LAB,LAB,<c.location object at 0x10b4efac8>,<c.teacher object at 0x10b4efb00>
+169,87,6112,,,SEM,SEM,<c.location object at 0x10b4efb70>,<c.teacher object at 0x10b4efba8>,,,,,,,
+170,87,6113,,,SEM,SEM,<c.location object at 0x10b4efc88>,<c.teacher object at 0x10b4efcc0>,,,,,,,
+171,88,2489,,"1,179",SEM,SEM,<c.location object at 0x10b4efe48>,<c.teacher object at 0x10b4efe80>,,,,,,<c.location object at 0x10b4efef0>,<c.teacher object at 0x10b4eff28>
+172,89,1172,,1,SEM,SEM,<c.location object at 0x10b4f2128>,<c.teacher object at 0x10b4f2160>,2180,,1,LAB,LAB,<c.location object at 0x10b4f2240>,<c.teacher object at 0x10b4f2278>
+173,89,11203,,1,SEM,SEM,<c.location object at 0x10b4f2390>,<c.teacher object at 0x10b4f23c8>,11204,,1,LAB,LAB,<c.location object at 0x10b4f24a8>,<c.teacher object at 0x10b4f24e0>
+174,89,11276,,1,SEM,SEM,<c.location object at 0x10b4f25f8>,<c.teacher object at 0x10b4f2630>,11277,,1,LAB,LAB,<c.location object at 0x10b4f2710>,<c.teacher object at 0x10b4f2748>
+175,89,3390,,1,SEM,SEM,<c.location object at 0x10b4f2860>,<c.teacher object at 0x10b4f2898>,3391,,1,LAB,LAB,<c.location object at 0x10b4f2978>,<c.teacher object at 0x10b4f29b0>
+176,89,3947,,1,SEM,SEM,<c.location object at 0x10b4f2ac8>,<c.teacher object at 0x10b4f2b00>,3948,,1,LAB,LAB,<c.location object at 0x10b4f2be0>,<c.teacher object at 0x10b4f2c18>
+177,89,4015,,1,SEM,SEM,<c.location object at 0x10b4f2d30>,<c.teacher object at 0x10b4f2d68>,4016,,1,LAB,LAB,<c.location object at 0x10b4f2e48>,<c.teacher object at 0x10b4f2e80>
+178,90,6567,,"1,179",SEM,SEM,<c.location object at 0x10b4f2f60>,<c.teacher object at 0x10b4f2f98>,6568,,"1,179",LAB,LAB,<c.location object at 0x10b4f40b8>,<c.teacher object at 0x10b4f40f0>
+179,91,1173,,1,SEM,SEM,<c.location object at 0x10b4f42b0>,<c.teacher object at 0x10b4f42e8>,2181,,1,LAB,LAB,<c.location object at 0x10b4f43c8>,<c.teacher object at 0x10b4f4400>
+180,91,11425,,1,SEM,SEM,<c.location object at 0x10b4f4518>,<c.teacher object at 0x10b4f4550>,11426,,1,LAB,LAB,<c.location object at 0x10b4f4630>,<c.teacher object at 0x10b4f4668>
+181,92,3388,,1,SEM,SEM,<c.location object at 0x10b4f4748>,<c.teacher object at 0x10b4f4780>,3389,,1,LAB,LAB,<c.location object at 0x10b4f4860>,<c.teacher object at 0x10b4f4898>
+182,93,7565,,1,SEM,SEM,<c.location object at 0x10b4f4a58>,<c.teacher object at 0x10b4f4a90>,7566,,1,LAB,LAB,<c.location object at 0x10b4f4b70>,<c.teacher object at 0x10b4f4ba8>
+183,93,7567,,1,SEM,SEM,<c.location object at 0x10b4f4cc0>,<c.teacher object at 0x10b4f4cf8>,7568,,1,LAB,LAB,<c.location object at 0x10b4f4dd8>,<c.teacher object at 0x10b4f4e10>
+184,93,7569,,1,SEM,SEM,<c.location object at 0x10b4f4f28>,<c.teacher object at 0x10b4f4f60>,7570,,1,LAB,LAB,<c.location object at 0x10b4f6080>,<c.teacher object at 0x10b4f60b8>
+185,93,7901,,1,SEM,SEM,<c.location object at 0x10b4f61d0>,<c.teacher object at 0x10b4f6208>,7902,,1,LAB,LAB,<c.location object at 0x10b4f62e8>,<c.teacher object at 0x10b4f6320>
+186,94,1174,,1,SEM,SEM,<c.location object at 0x10b4f6470>,<c.teacher object at 0x10b4f64a8>,2182,,1,LAB,LAB,<c.location object at 0x10b4f6588>,<c.teacher object at 0x10b4f65c0>
+187,94,1175,,1,SEM,SEM,<c.location object at 0x10b4f66d8>,<c.teacher object at 0x10b4f6710>,2183,,1,LAB,LAB,<c.location object at 0x10b4f67f0>,<c.teacher object at 0x10b4f6828>
+188,94,4551,,1,SEM,SEM,<c.location object at 0x10b4f6940>,<c.teacher object at 0x10b4f6978>,4552,,1,LAB,LAB,<c.location object at 0x10b4f6a58>,<c.teacher object at 0x10b4f6a90>
+189,94,5945,,1,SEM,SEM,<c.location object at 0x10b4f6ba8>,<c.teacher object at 0x10b4f6be0>,5946,,1,LAB,LAB,<c.location object at 0x10b4f6cc0>,<c.teacher object at 0x10b4f6cf8>
+190,94,6579,,1,SEM,SEM,<c.location object at 0x10b4f6e10>,<c.teacher object at 0x10b4f6e48>,6580,,1,LAB,LAB,<c.location object at 0x10b4f6f28>,<c.teacher object at 0x10b4f6f60>
+191,95,7572,,"1,34",SEM,SEM,<c.location object at 0x10b4f9080>,<c.teacher object at 0x10b4f90b8>,7573,,"1,34",LAB,LAB,<c.location object at 0x10b4f9198>,<c.teacher object at 0x10b4f91d0>
+192,96,6688,,1,SEM,SEM,<c.location object at 0x10b4f9390>,<c.teacher object at 0x10b4f93c8>,6689,,1,LAB,LAB,<c.location object at 0x10b4f94a8>,<c.teacher object at 0x10b4f94e0>
+193,96,6902,,1,SEM,SEM,<c.location object at 0x10b4f95f8>,<c.teacher object at 0x10b4f9630>,6903,,1,LAB,LAB,<c.location object at 0x10b4f9710>,<c.teacher object at 0x10b4f9748>
+194,96,6904,,1,SEM,SEM,<c.location object at 0x10b4f9860>,<c.teacher object at 0x10b4f9898>,6905,,1,LAB,LAB,<c.location object at 0x10b4f9978>,<c.teacher object at 0x10b4f99b0>
+195,96,7899,,1,SEM,SEM,<c.location object at 0x10b4f9ac8>,<c.teacher object at 0x10b4f9b00>,7900,,1,LAB,LAB,<c.location object at 0x10b4f9be0>,<c.teacher object at 0x10b4f9c18>
+196,96,7919,,1,SEM,SEM,<c.location object at 0x10b4f9d30>,<c.teacher object at 0x10b4f9d68>,7920,,1,LAB,LAB,<c.location object at 0x10b4f9e48>,<c.teacher object at 0x10b4f9e80>
+197,97,7574,,"1,34",SEM,SEM,<c.location object at 0x10b4f9f60>,<c.teacher object at 0x10b4f9f98>,7575,,1,LAB,LAB,<c.location object at 0x10b4fc0b8>,<c.teacher object at 0x10b4fc0f0>
+198,98,3638,,1,SEM,SEM,<c.location object at 0x10b4fc240>,<c.teacher object at 0x10b4fc278>,3639,,1,LAB,LAB,<c.location object at 0x10b4fc358>,<c.teacher object at 0x10b4fc390>
+199,99,5175,,1,SEM,SEM,<c.location object at 0x10b4fc4e0>,<c.teacher object at 0x10b4fc518>,5176,,1,LAB,LAB,<c.location object at 0x10b4fc5f8>,<c.teacher object at 0x10b4fc630>
+200,100,6664,,1,SEM,SEM,<c.location object at 0x10b4fc7f0>,<c.teacher object at 0x10b4fc828>,6665,,1,LAB,LAB,<c.location object at 0x10b4fc908>,<c.teacher object at 0x10b4fc940>
+201,100,1176,,1,SEM,SEM,<c.location object at 0x10b4fca58>,<c.teacher object at 0x10b4fca90>,2184,,1,LAB,LAB,<c.location object at 0x10b4fcb70>,<c.teacher object at 0x10b4fcba8>
+202,100,3392,,1,SEM,SEM,<c.location object at 0x10b4fccc0>,<c.teacher object at 0x10b4fccf8>,3393,,1,LAB,LAB,<c.location object at 0x10b4fcdd8>,<c.teacher object at 0x10b4fce10>
+203,100,5284,,1,SEM,SEM,<c.location object at 0x10b4fcf28>,<c.teacher object at 0x10b4fcf60>,5285,,1,LAB,LAB,<c.location object at 0x10b4ff080>,<c.teacher object at 0x10b4ff0b8>
+204,101,7578,,1,SEM,SEM,<c.location object at 0x10b4ff208>,<c.teacher object at 0x10b4ff240>,7579,,1,LAB,LAB,<c.location object at 0x10b4ff320>,<c.teacher object at 0x10b4ff358>
+205,102,4370,,1,SEM,SEM,<c.location object at 0x10b4ff4a8>,<c.teacher object at 0x10b4ff4e0>,4371,,1,LAB,LAB,<c.location object at 0x10b4ff5c0>,<c.teacher object at 0x10b4ff5f8>
+206,102,2998,,1,SEM,SEM,<c.location object at 0x10b4ff710>,<c.teacher object at 0x10b4ff748>,2999,,1,LAB,LAB,<c.location object at 0x10b4ff828>,<c.teacher object at 0x10b4ff860>
+207,102,4997,,1,SEM,SEM,<c.location object at 0x10b4ff978>,<c.teacher object at 0x10b4ff9b0>,4998,,1,LAB,LAB,<c.location object at 0x10b4ffa90>,<c.teacher object at 0x10b4ffac8>
+208,102,5290,,1,SEM,SEM,<c.location object at 0x10b4ffbe0>,<c.teacher object at 0x10b4ffc18>,5291,,1,LAB,LAB,<c.location object at 0x10b4ffcf8>,<c.teacher object at 0x10b4ffd30>
+209,102,5952,,1,SEM,SEM,<c.location object at 0x10b4ffe48>,<c.teacher object at 0x10b4ffe80>,5953,,1,LAB,LAB,<c.location object at 0x10b4fff60>,<c.teacher object at 0x10b4fff98>
+210,103,10958,,1,SEM,SEM,<c.location object at 0x10b5010b8>,<c.teacher object at 0x10b5010f0>,10959,,1,LAB,LAB,<c.location object at 0x10b5011d0>,<c.teacher object at 0x10b501208>
+211,104,3642,,1,SEM,SEM,<c.location object at 0x10b5013c8>,<c.teacher object at 0x10b501400>,3643,,1,LAB,LAB,<c.location object at 0x10b5014e0>,<c.teacher object at 0x10b501518>
+212,104,4254,,1,SEM,SEM,<c.location object at 0x10b501630>,<c.teacher object at 0x10b501668>,4255,,1,LAB,LAB,<c.location object at 0x10b501748>,<c.teacher object at 0x10b501780>
+213,104,4995,,1,SEM,SEM,<c.location object at 0x10b501898>,<c.teacher object at 0x10b5018d0>,4996,,1,LAB,LAB,<c.location object at 0x10b5019b0>,<c.teacher object at 0x10b5019e8>
+214,104,6610,,1,SEM,SEM,<c.location object at 0x10b501b00>,<c.teacher object at 0x10b501b38>,6611,,1,LAB,LAB,<c.location object at 0x10b501c18>,<c.teacher object at 0x10b501c50>
+215,104,5956,,1,SEM,SEM,<c.location object at 0x10b501d68>,<c.teacher object at 0x10b501da0>,5957,,1,LAB,LAB,<c.location object at 0x10b501e80>,<c.teacher object at 0x10b501eb8>
+216,105,7581,,1,SEM,SEM,<c.location object at 0x10b501f98>,<c.teacher object at 0x10b501fd0>,7582,,1,LAB,LAB,<c.location object at 0x10b5040f0>,<c.teacher object at 0x10b504128>
+217,106,1177,,1,SEM,SEM,<c.location object at 0x10b5042e8>,<c.teacher object at 0x10b504320>,2185,,1,LAB,LAB,<c.location object at 0x10b504400>,<c.teacher object at 0x10b504438>
+218,106,4876,,1,SEM,SEM,<c.location object at 0x10b504550>,<c.teacher object at 0x10b504588>,5968,,1,LAB,LAB,<c.location object at 0x10b504668>,<c.teacher object at 0x10b5046a0>
+219,107,7583,,1,SEM,SEM,<c.location object at 0x10b504780>,<c.teacher object at 0x10b5047b8>,7584,,1,LAB,LAB,<c.location object at 0x10b504898>,<c.teacher object at 0x10b5048d0>
+220,108,8303,,1,SEM,SEM,<c.location object at 0x10b504a20>,<c.teacher object at 0x10b504a58>,8304,,1,LAB,LAB,<c.location object at 0x10b504b38>,<c.teacher object at 0x10b504b70>
+221,109,11166,,1,SEM,SEM,<c.location object at 0x10b504d30>,<c.teacher object at 0x10b504d68>,11167,,1,LAB,LAB,<c.location object at 0x10b504e48>,<c.teacher object at 0x10b504e80>
+222,110,3482,,1,SEM,SEM,<c.location object at 0x10b504f60>,<c.teacher object at 0x10b504f98>,3483,,1,LAB,LAB,<c.location object at 0x10b5050b8>,<c.teacher object at 0x10b5050f0>
+223,111,1178,,1,SEM,SEM,<c.location object at 0x10b5052b0>,<c.teacher object at 0x10b5052e8>,2186,,1,LAB,LAB,<c.location object at 0x10b5053c8>,<c.teacher object at 0x10b505400>
+224,111,1179,,1,SEM,SEM,<c.location object at 0x10b505518>,<c.teacher object at 0x10b505550>,2187,,1,LAB,LAB,<c.location object at 0x10b505630>,<c.teacher object at 0x10b505668>
+225,111,5521,,1,SEM,SEM,<c.location object at 0x10b505780>,<c.teacher object at 0x10b5057b8>,5522,,1,LAB,LAB,<c.location object at 0x10b505898>,<c.teacher object at 0x10b5058d0>
+226,111,5972,,1,SEM,SEM,<c.location object at 0x10b5059e8>,<c.teacher object at 0x10b505a20>,5973,,1,LAB,LAB,<c.location object at 0x10b505b00>,<c.teacher object at 0x10b505b38>
+227,112,1180,,1,SEM,SEM,<c.location object at 0x10b505c88>,<c.teacher object at 0x10b505cc0>,2188,,1,LAB,LAB,<c.location object at 0x10b505da0>,<c.teacher object at 0x10b505dd8>
+228,112,1181,,1,SEM,SEM,<c.location object at 0x10b505ef0>,<c.teacher object at 0x10b505f28>,2189,,1,LAB,LAB,<c.location object at 0x10b508048>,<c.teacher object at 0x10b508080>
+229,112,4928,,1,SEM,SEM,<c.location object at 0x10b508198>,<c.teacher object at 0x10b5081d0>,4929,,1,LAB,LAB,<c.location object at 0x10b5082b0>,<c.teacher object at 0x10b5082e8>
+230,112,5293,,1,SEM,SEM,<c.location object at 0x10b508400>,<c.teacher object at 0x10b508438>,5294,,1,LAB,LAB,<c.location object at 0x10b508518>,<c.teacher object at 0x10b508550>
+231,112,10038,,1,SEM,SEM,<c.location object at 0x10b508668>,<c.teacher object at 0x10b5086a0>,10039,,1,LAB,LAB,<c.location object at 0x10b508780>,<c.teacher object at 0x10b5087b8>
+232,113,3668,,1,SEM,SEM,<c.location object at 0x10b508908>,<c.teacher object at 0x10b508940>,3669,,1,LAB,LAB,<c.location object at 0x10b508a20>,<c.teacher object at 0x10b508a58>
+233,113,5177,,1,SEM,SEM,<c.location object at 0x10b508b70>,<c.teacher object at 0x10b508ba8>,5178,,1,LAB,LAB,<c.location object at 0x10b508c88>,<c.teacher object at 0x10b508cc0>
+234,113,6043,,1,SEM,SEM,<c.location object at 0x10b508dd8>,<c.teacher object at 0x10b508e10>,6044,,1,LAB,LAB,<c.location object at 0x10b508ef0>,<c.teacher object at 0x10b508f28>
+235,114,8984,,1,SEM,SEM,<c.location object at 0x10b50a048>,<c.teacher object at 0x10b50a080>,8985,,1,LAB,LAB,<c.location object at 0x10b50a160>,<c.teacher object at 0x10b50a198>
+236,115,1182,,1,SEM,SEM,<c.location object at 0x10b50a358>,<c.teacher object at 0x10b50a390>,2190,,1,LAB,LAB,<c.location object at 0x10b50a470>,<c.teacher object at 0x10b50a4a8>
+237,115,7552,,1,SEM,SEM,<c.location object at 0x10b50a5c0>,<c.teacher object at 0x10b50a5f8>,7553,,1,LAB,LAB,<c.location object at 0x10b50a6d8>,<c.teacher object at 0x10b50a710>
+238,115,1183,,1,SEM,SEM,<c.location object at 0x10b50a828>,<c.teacher object at 0x10b50a860>,2191,,1,LAB,LAB,<c.location object at 0x10b50a940>,<c.teacher object at 0x10b50a978>
+239,115,5295,,1,SEM,SEM,<c.location object at 0x10b50aa90>,<c.teacher object at 0x10b50aac8>,5296,,1,LAB,LAB,<c.location object at 0x10b50aba8>,<c.teacher object at 0x10b50abe0>
+240,115,5974,,1,SEM,SEM,<c.location object at 0x10b50acf8>,<c.teacher object at 0x10b50ad30>,5975,,1,LAB,LAB,<c.location object at 0x10b50ae10>,<c.teacher object at 0x10b50ae48>
+241,116,7585,,"1,34",SEM,SEM,<c.location object at 0x10b50af28>,<c.teacher object at 0x10b50af60>,7586,,"1,34",LAB,LAB,<c.location object at 0x10b50d080>,<c.teacher object at 0x10b50d0b8>
+242,117,3421,,1,SEM,SEM,<c.location object at 0x10b50d278>,<c.teacher object at 0x10b50d2b0>,3422,,1,LAB,LAB,<c.location object at 0x10b50d390>,<c.teacher object at 0x10b50d3c8>
+243,117,7917,,1,SEM,SEM,<c.location object at 0x10b50d4e0>,<c.teacher object at 0x10b50d518>,7918,,1,LAB,LAB,<c.location object at 0x10b50d5f8>,<c.teacher object at 0x10b50d630>
+244,117,3455,,1,SEM,SEM,<c.location object at 0x10b50d748>,<c.teacher object at 0x10b50d780>,3456,,1,LAB,LAB,<c.location object at 0x10b50d860>,<c.teacher object at 0x10b50d898>
+245,117,7554,,1,SEM,SEM,<c.location object at 0x10b50d9b0>,<c.teacher object at 0x10b50d9e8>,7555,,1,LAB,LAB,<c.location object at 0x10b50dac8>,<c.teacher object at 0x10b50db00>
+246,117,7556,,1,SEM,SEM,<c.location object at 0x10b50dc18>,<c.teacher object at 0x10b50dc50>,7557,,1,LAB,LAB,<c.location object at 0x10b50dd30>,<c.teacher object at 0x10b50dd68>
+247,117,7880,,1,SEM,SEM,<c.location object at 0x10b50de80>,<c.teacher object at 0x10b50deb8>,7881,,1,LAB,LAB,<c.location object at 0x10b50df98>,<c.teacher object at 0x10b50dfd0>
+248,118,5976,,1,SEM,SEM,<c.location object at 0x10b50f160>,<c.teacher object at 0x10b50f198>,5977,,1,LAB,LAB,<c.location object at 0x10b50f278>,<c.teacher object at 0x10b50f2b0>
+249,118,4764,,1,SEM,SEM,<c.location object at 0x10b50f3c8>,<c.teacher object at 0x10b50f400>,4765,,1,LAB,LAB,<c.location object at 0x10b50f4e0>,<c.teacher object at 0x10b50f518>
+250,118,5389,,1,SEM,SEM,<c.location object at 0x10b50f630>,<c.teacher object at 0x10b50f668>,5390,,1,LAB,LAB,<c.location object at 0x10b50f748>,<c.teacher object at 0x10b50f780>
+251,118,6622,,1,SEM,SEM,<c.location object at 0x10b50f898>,<c.teacher object at 0x10b50f8d0>,6623,,1,LAB,LAB,<c.location object at 0x10b50f9b0>,<c.teacher object at 0x10b50f9e8>
+252,119,4526,,1,SEM,SEM,<c.location object at 0x10b50fac8>,<c.teacher object at 0x10b50fb00>,4527,,1,LAB,LAB,<c.location object at 0x10b50fbe0>,<c.teacher object at 0x10b50fc18>
+253,120,3675,,1,SEM,SEM,<c.location object at 0x10b50fd68>,<c.teacher object at 0x10b50fda0>,3676,,1,LAB,LAB,<c.location object at 0x10b50fe80>,<c.teacher object at 0x10b50feb8>
+254,121,10987,,1,SEM,SEM,<c.location object at 0x10b512048>,<c.teacher object at 0x10b512080>,10988,,1,LAB,LAB,<c.location object at 0x10b512160>,<c.teacher object at 0x10b512198>
+255,122,8313,,1,SEM,SEM,<c.location object at 0x10b512358>,<c.teacher object at 0x10b512390>,8314,,1,LAB,LAB,<c.location object at 0x10b512470>,<c.teacher object at 0x10b5124a8>
+256,122,9237,,1,SEM,SEM,<c.location object at 0x10b5125c0>,<c.teacher object at 0x10b5125f8>,9238,,1,LAB,LAB,<c.location object at 0x10b5126d8>,<c.teacher object at 0x10b512710>
+257,122,10046,,1,SEM,SEM,<c.location object at 0x10b512828>,<c.teacher object at 0x10b512860>,10047,,1,LAB,LAB,<c.location object at 0x10b512940>,<c.teacher object at 0x10b512978>
+258,123,4344,,1,SEM,SEM,<c.location object at 0x10b512a20>,<c.teacher object at 0x10b512a58>,,,,,,,
+259,124,6625,,1,SEM,SEM,<c.location object at 0x10b512c50>,<c.teacher object at 0x10b512c88>,6626,,1,LAB,LAB,<c.location object at 0x10b512d68>,<c.teacher object at 0x10b512da0>
+260,124,6627,,1,SEM,SEM,<c.location object at 0x10b512eb8>,<c.teacher object at 0x10b512ef0>,6628,,1,LAB,LAB,<c.location object at 0x10b512fd0>,<c.teacher object at 0x10b515048>
+261,124,7561,,1,SEM,SEM,<c.location object at 0x10b515160>,<c.teacher object at 0x10b515198>,7562,,1,LAB,LAB,<c.location object at 0x10b515278>,<c.teacher object at 0x10b5152b0>
+262,124,9114,,1,SEM,SEM,<c.location object at 0x10b5153c8>,<c.teacher object at 0x10b515400>,9115,,1,LAB,LAB,<c.location object at 0x10b5154e0>,<c.teacher object at 0x10b515518>
+263,125,8974,,"1,34",SEM,SEM,<c.location object at 0x10b5155f8>,<c.teacher object at 0x10b515630>,8975,,"1,34",LAB,LAB,<c.location object at 0x10b515710>,<c.teacher object at 0x10b515748>
+264,126,11138,,1,SEM,SEM,<c.location object at 0x10b515898>,<c.teacher object at 0x10b5158d0>,11139,,1,LAB,LAB,<c.location object at 0x10b5159b0>,<c.teacher object at 0x10b5159e8>
+265,127,7874,,1,SEM,SEM,<c.location object at 0x10b515ba8>,<c.teacher object at 0x10b515be0>,7875,,1,LAB,LAB,<c.location object at 0x10b515cc0>,<c.teacher object at 0x10b515cf8>
+266,128,6944,,1,SEM,SEM,<c.location object at 0x10b515dd8>,<c.teacher object at 0x10b515e10>,6945,,1,LAB,LAB,<c.location object at 0x10b515ef0>,<c.teacher object at 0x10b515f28>
+267,129,7850,,1,SEM,SEM,<c.location object at 0x10aa0f0b8>,<c.teacher object at 0x10aa0f0f0>,7851,,1,LAB,LAB,<c.location object at 0x10aa0f1d0>,<c.teacher object at 0x10aa0f208>
+268,130,8565,,1,SEM,SEM,<c.location object at 0x10aa0f358>,<c.teacher object at 0x10aa0f390>,8566,,1,LAB,LAB,<c.location object at 0x10aa0f470>,<c.teacher object at 0x10aa0f4a8>
+269,131,10965,,1,SEM,SEM,<c.location object at 0x10aa0f5f8>,<c.teacher object at 0x10aa0f630>,10966,,1,LAB,LAB,<c.location object at 0x10aa0f710>,<c.teacher object at 0x10aa0f748>
+270,132,7804,,1,SEM,SEM,<c.location object at 0x10aa0f898>,<c.teacher object at 0x10aa0f8d0>,7805,,1,LAB,LAB,<c.location object at 0x10aa0f9b0>,<c.teacher object at 0x10aa0f9e8>
+271,133,10967,,1,SEM,SEM,<c.location object at 0x10aa0fb38>,<c.teacher object at 0x10aa0fb70>,10968,,1,LAB,LAB,<c.location object at 0x10aa0fc50>,<c.teacher object at 0x10aa0fc88>
+272,134,4874,,1,SEM,SEM,<c.location object at 0x10aa0fdd8>,<c.teacher object at 0x10aa0fe10>,4875,,1,LAB,LAB,<c.location object at 0x10aa0fef0>,<c.teacher object at 0x10aa0ff28>
+273,135,7941,,"1,34",SEM,SEM,<c.location object at 0x10aa120b8>,<c.teacher object at 0x10aa120f0>,7942,,"1,34",LAB,LAB,<c.location object at 0x10aa121d0>,<c.teacher object at 0x10aa12208>
+274,136,4895,,1,SEM,SEM,<c.location object at 0x10aa12358>,<c.teacher object at 0x10aa12390>,4896,,1,LAB,LAB,<c.location object at 0x10aa12470>,<c.teacher object at 0x10aa124a8>
+275,137,3785,,1,SEM,SEM,<c.location object at 0x10aa125f8>,<c.teacher object at 0x10aa12630>,6189,,1,LAB,LAB,<c.location object at 0x10aa12710>,<c.teacher object at 0x10aa12748>
+276,138,5183,,1,SEM,SEM,<c.location object at 0x10aa12898>,<c.teacher object at 0x10aa128d0>,5184,,1,LAB,LAB,<c.location object at 0x10aa129b0>,<c.teacher object at 0x10aa129e8>
+277,139,1184,,1,SEM,SEM,<c.location object at 0x10aa12ba8>,<c.teacher object at 0x10aa12be0>,2192,,1,LAB,LAB,<c.location object at 0x10aa12cc0>,<c.teacher object at 0x10aa12cf8>
+278,139,4689,,1,SEM,SEM,<c.location object at 0x10aa12e10>,<c.teacher object at 0x10aa12e48>,4769,,1,LAB,LAB,<c.location object at 0x10aa12f28>,<c.teacher object at 0x10aa12f60>
+279,140,3671,,1,SEM,SEM,<c.location object at 0x10aa14080>,<c.teacher object at 0x10aa140b8>,3672,,1,LAB,LAB,<c.location object at 0x10aa14198>,<c.teacher object at 0x10aa141d0>
+280,141,5983,,1,SEM,SEM,<c.location object at 0x10aa14320>,<c.teacher object at 0x10aa14358>,5984,,1,LAB,LAB,<c.location object at 0x10aa14438>,<c.teacher object at 0x10aa14470>
+281,142,4377,,1,SEM,SEM,<c.location object at 0x10aa145c0>,<c.teacher object at 0x10aa145f8>,5982,,1,LAB,LAB,<c.location object at 0x10aa146d8>,<c.teacher object at 0x10aa14710>
+282,143,6637,,1,SEM,SEM,<c.location object at 0x10aa148d0>,<c.teacher object at 0x10aa14908>,6638,,1,LAB,LAB,<c.location object at 0x10aa149e8>,<c.teacher object at 0x10aa14a20>
+283,143,10981,,1,SEM,SEM,<c.location object at 0x10aa14b38>,<c.teacher object at 0x10aa14b70>,10982,,1,LAB,LAB,<c.location object at 0x10aa14c50>,<c.teacher object at 0x10aa14c88>
+284,144,6639,,1,SEM,SEM,<c.location object at 0x10aa14dd8>,<c.teacher object at 0x10aa14e10>,6640,,1,LAB,LAB,<c.location object at 0x10aa14ef0>,<c.teacher object at 0x10aa14f28>
+285,144,10979,,1,SEM,SEM,<c.location object at 0x10aa16080>,<c.teacher object at 0x10aa160b8>,10980,,1,LAB,LAB,<c.location object at 0x10aa16198>,<c.teacher object at 0x10aa161d0>
+286,144,7563,,1,SEM,SEM,<c.location object at 0x10aa162e8>,<c.teacher object at 0x10aa16320>,7564,,1,LAB,LAB,<c.location object at 0x10aa16400>,<c.teacher object at 0x10aa16438>
+287,144,8570,,1,SEM,SEM,<c.location object at 0x10aa16550>,<c.teacher object at 0x10aa16588>,8571,,1,LAB,LAB,<c.location object at 0x10aa16668>,<c.teacher object at 0x10aa166a0>
+288,144,8572,,1,SEM,SEM,<c.location object at 0x10aa167b8>,<c.teacher object at 0x10aa167f0>,8573,,1,LAB,LAB,<c.location object at 0x10aa168d0>,<c.teacher object at 0x10aa16908>
+289,145,6849,,1,SEM,SEM,<c.location object at 0x10aa169b0>,<c.teacher object at 0x10aa169e8>,,,,,,,
+290,146,7928,,1,SUP,SUP,<c.location object at 0x10aa16b70>,<c.teacher object at 0x10aa16ba8>,,,,,,,
+291,146,8859,,"1,3",SUP,SUP,<c.location object at 0x10aa16cf8>,<c.teacher object at 0x10aa16d30>,,,,,,,
+292,146,9194,,"1,3",SUP,SUP,<c.location object at 0x10aa16e80>,<c.teacher object at 0x10aa16eb8>,,,,,,,
+293,146,10745,,"1,3",SUP,SUP,<c.location object at 0x10aa18048>,<c.teacher object at 0x10aa18080>,,,,,,,
+294,147,4345,,1,SEM,SEM,<c.location object at 0x10aa181d0>,<c.teacher object at 0x10aa18208>,,,,,,,
+295,148,6651,,1,SEM,SEM,<c.location object at 0x10aa18400>,<c.teacher object at 0x10aa18438>,7608,,1,LAB,LAB,<c.location object at 0x10aa18518>,<c.teacher object at 0x10aa18550>
+296,149,11441,,1,SEM,SEM,<c.location object at 0x10aa186a0>,<c.teacher object at 0x10aa186d8>,11442,,1,LAB,LAB,<c.location object at 0x10aa187b8>,<c.teacher object at 0x10aa187f0>
+297,150,8332,,1,SEM,SEM,<c.location object at 0x10aa188d0>,<c.teacher object at 0x10aa18908>,8333,,1,LAB,LAB,<c.location object at 0x10aa189e8>,<c.teacher object at 0x10aa18a20>
+298,151,8339,,1,SEM,SEM,<c.location object at 0x10aa18be0>,<c.teacher object at 0x10aa18c18>,8340,,1,LAB,LAB,<c.location object at 0x10aa18cf8>,<c.teacher object at 0x10aa18d30>
+299,151,11215,,1,SEM,SEM,<c.location object at 0x10aa18e48>,<c.teacher object at 0x10aa18e80>,11216,,1,LAB,LAB,<c.location object at 0x10aa18f60>,<c.teacher object at 0x10aa18f98>
+300,152,11041,,1,SEM,SEM,<c.location object at 0x10aa1d0b8>,<c.teacher object at 0x10aa1d0f0>,11042,,1,LAB,LAB,<c.location object at 0x10aa1d1d0>,<c.teacher object at 0x10aa1d208>
+301,153,4023,,1,SEM,SEM,<c.location object at 0x10aa1d320>,<c.teacher object at 0x10aa1d358>,,,,,,,
+302,154,7761,,1,SEM,SEM,<c.location object at 0x10aa1d4e0>,<c.teacher object at 0x10aa1d518>,8348,,1,LAB,LAB,<c.location object at 0x10aa1d5f8>,<c.teacher object at 0x10aa1d630>
+303,155,6671,,1,SEM,SEM,<c.location object at 0x10aa1d780>,<c.teacher object at 0x10aa1d7b8>,6670,,1,LAB,LAB,<c.location object at 0x10aa1d898>,<c.teacher object at 0x10aa1d8d0>
+304,156,11219,,1,SEM,SEM,<c.location object at 0x10aa1d9e8>,<c.teacher object at 0x10aa1da20>,,,,,,,
+305,157,6653,,1,SEM,SEM,<c.location object at 0x10aa1dba8>,<c.teacher object at 0x10aa1dbe0>,8354,,1,LAB,LAB,<c.location object at 0x10aa1dcc0>,<c.teacher object at 0x10aa1dcf8>
+306,158,7809,,1,SEM,SEM,<c.location object at 0x10aa1de10>,<c.teacher object at 0x10aa1de48>,,,,,,,
+307,159,6652,,1,SEM,SEM,<c.location object at 0x10aa1f080>,<c.teacher object at 0x10aa1f0b8>,7609,,1,LAB,LAB,<c.location object at 0x10aa1f198>,<c.teacher object at 0x10aa1f1d0>
+308,160,11443,,1,SEM,SEM,<c.location object at 0x10aa1f320>,<c.teacher object at 0x10aa1f358>,11444,,1,LAB,LAB,<c.location object at 0x10aa1f438>,<c.teacher object at 0x10aa1f470>
+309,161,8334,,1,SEM,SEM,<c.location object at 0x10aa1f550>,<c.teacher object at 0x10aa1f588>,8335,,1,LAB,LAB,<c.location object at 0x10aa1f668>,<c.teacher object at 0x10aa1f6a0>
+310,162,8344,,1,SEM,SEM,<c.location object at 0x10aa1f860>,<c.teacher object at 0x10aa1f898>,8345,,1,LAB,LAB,<c.location object at 0x10aa1f978>,<c.teacher object at 0x10aa1f9b0>
+311,162,11217,,1,SEM,SEM,<c.location object at 0x10aa1fac8>,<c.teacher object at 0x10aa1fb00>,11218,,1,LAB,LAB,<c.location object at 0x10aa1fbe0>,<c.teacher object at 0x10aa1fc18>
+312,163,11039,,1,SEM,SEM,<c.location object at 0x10aa1fcf8>,<c.teacher object at 0x10aa1fd30>,11040,,1,LAB,LAB,<c.location object at 0x10aa1fe10>,<c.teacher object at 0x10aa1fe48>
+313,164,4024,,1,SEM,SEM,<c.location object at 0x10aa1ff60>,<c.teacher object at 0x10aa1ff98>,,,,,,,
+314,165,7762,,1,SEM,SEM,<c.location object at 0x10aa20160>,<c.teacher object at 0x10aa20198>,8349,,1,LAB,LAB,<c.location object at 0x10aa20278>,<c.teacher object at 0x10aa202b0>
+315,166,11220,,1,SEM,SEM,<c.location object at 0x10aa203c8>,<c.teacher object at 0x10aa20400>,,,,,,,
+316,167,6654,,1,SEM,SEM,<c.location object at 0x10aa20588>,<c.teacher object at 0x10aa205c0>,8355,,1,LAB,LAB,<c.location object at 0x10aa206a0>,<c.teacher object at 0x10aa206d8>
+317,168,7810,,1,SEM,SEM,<c.location object at 0x10aa207f0>,<c.teacher object at 0x10aa20828>,,,,,,,
+318,169,5635,,"1,3,180",SUP,SUP,<c.location object at 0x10aa209b0>,<c.teacher object at 0x10aa209e8>,,,,,,,
+319,169,6308,,"1,3",SUP,SUP,<c.location object at 0x10aa20b38>,<c.teacher object at 0x10aa20b70>,,,,,,,
+320,169,6309,,"1,3",SUP,SUP,<c.location object at 0x10aa20cc0>,<c.teacher object at 0x10aa20cf8>,,,,,,,
+321,169,7934,,"1,3",SUP,SUP,<c.location object at 0x10aa20e48>,<c.teacher object at 0x10aa20e80>,,,,,,,
+322,169,8679,,,SUP,SUP,<c.location object at 0x10aa20f98>,<c.teacher object at 0x10aa20fd0>,,,,,,,
+323,169,9315,,"1,3",SUP,SUP,<c.location object at 0x10aa25160>,<c.teacher object at 0x10aa25198>,,,,,,,
+324,169,10747,,"1,3",SUP,SUP,<c.location object at 0x10aa252e8>,<c.teacher object at 0x10aa25320>,,,,,,,
+325,170,1193,,"8,180,1",SUP,SUP,<c.location object at 0x10aa254a8>,<c.teacher object at 0x10aa254e0>,,,,,,,
+326,170,5634,,"1,3",SUP,SUP,<c.location object at 0x10aa25630>,<c.teacher object at 0x10aa25668>,,,,,,,
+327,170,6310,,"1,3,8",SUP,SUP,<c.location object at 0x10aa257b8>,<c.teacher object at 0x10aa257f0>,,,,,,,
+328,170,8018,,"1,3,8",SUP,SUP,<c.location object at 0x10aa25940>,<c.teacher object at 0x10aa25978>,,,,,,,
+329,170,8680,,,SUP,SUP,<c.location object at 0x10aa25a90>,<c.teacher object at 0x10aa25ac8>,,,,,,,
+330,170,10749,,,SUP,SUP,<c.location object at 0x10aa25be0>,<c.teacher object at 0x10aa25c18>,,,,,,,
