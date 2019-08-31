@@ -34,14 +34,12 @@ def getCourses(dpt,trm,yr):
 
 
 	#saves the CECS department's shedule into a variable
-	semester_url = 'http://web.csulb.edu/depts/enrollment/registration/class_schedule/' + trm + '_' + yr + '/By_Subject/' + dpt +'.html#note1'
+	semester_url = 'http://web.csulb.edu/depts/enrollment/registration/class_schedule/' + trm + '_' + yr + '/By_Subject/' + dpt +'.html'
 
 	#opening up connection, grabbing the HTML
 	uClient = uReq(semester_url)
 	page_html = uClient.read()
 	uClient.close()
-
-	#turning the page html into a soup that I can manipulate
 	page_soup = soup(page_html, "html.parser")
 
 	#declares the list of courses
@@ -51,15 +49,6 @@ def getCourses(dpt,trm,yr):
 	tempCBL = page_soup.findAll("div", {"class" : "courseBlock"})
 
 	for courseBlk in tempCBL:
-
-		#This gets all the data I want to store later and puts it into variables
-
-		# TODO: store the correct course number in the variable
-		# TODO: save every variable as the correct data type
-		school = "CSULB"
-		term = trm
-		year = yr
-		department = dpt
 		courseName = (courseBlk.find("span", {"class" : "courseTitle"})).text.strip()
 		courseNumber = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
 		units = stripUnits((courseBlk.find("span", {"class" : "units"})).text.strip())
@@ -69,7 +58,7 @@ def getCourses(dpt,trm,yr):
 		#constructs a temporary course obejct that is the current course we just grabbed saved as an object
 
 		#TO DO: add "listOfGroups" to constructor
-		tempCourse = c.course(school,term,year,department,courseName,courseNumber,units,listOfGroups)
+		tempCourse = c.course("CSULB",trm,yr,dpt,courseName,courseNumber,units,listOfGroups)
 		listOfCourses.append(tempCourse)
 
 
@@ -82,159 +71,52 @@ def getGroups(courseBlk):
 	#declares the list of groups that gets returned later on
 	listOfGroups = []
 
-	# declares isLAB
-	isLAB = False
+	# We need to determine if we need to enroll in a lab for this course as well. We can
+	# do this by checking for these phrases in the course block's group message:
+	# 	- 'Enrollment required for SEM,LAB in this group of sections.' or 
+	# 	- 'Enrollment required for LEC,LAB in this group of sections.'
 
-
-	# this goes through every class that does not have groups, and if it does have a lab, then it gets flagged by making isLAB true
-	if (courseBlk.find("div", {"class" : "groupMessage"}) == None):
-		
-
-		table = courseBlk.findAll("td")
-
-
-		for td in table:
-			td = td.text.strip()
-			if (td == "LAB"):
-				isLAB = True
-
-		
-
-	# This set of if else statements runs the following:
-	# 		1) If it has no group messages and there is no labs, then it is only seminars
-	# 		2) If it has no group messages and there is labs, there is just 1 section of the class
-	# 		3) If neither are true, then it must have a group message. So, that menas that there are multiple groups
-
-
-
-	if (courseBlk.find("div", {"class" : "groupMessage"}) == None and isLAB == False):
-		#print("The course " + (courseBlk.find("span", {"class" : "courseTitle"})).text.strip() + " (" + (courseBlk.find("span", {"class" : "courseCode"})).text.strip() +") does NOT have GROUPS and does NOT have LABS")
-
-		# TO DO: make every row in a section table become an element in an array, and skip over the first element
-		#			for each line where you are going to add in the seminar, for each element in the list, delcare a temporary group
-		#			and then add that to the list of groups to be returned
-
-		table = courseBlk.findAll("tr")
-
-
-		# This for loop iteratively goes through each row in the table (that isnt the header) and then assigns that row to the the 'row' variable.
-		# It then cooresponds the correct td to each of the values in a temp group object
-		for i in range(0,len(table)-1):
-			row = table[i+1]
-
-			row = row.findAll("td")
+	# If neither of those phrases are in the group message, then we are able to scrape the sections by themeselves. Otherwise,
+	# coenrollment is required, thus every section needs to have a list of the courses that the student can coenroll in. Every SEM or
+	# LEC can be coenrolled to any of the labs in its section table.
 	
+	# We do this by creating a boolean. If it finds that coenrollment is required, then we have to do the code that links the labs to
+	# their seminar or lecture.
 
-			# After we get each row, we get the data we need for the group
-			SemClassNumber = row[0].text.strip()
-			SemType = row[2].text.strip()
-			SemDays = row[3].text.strip()
-
-			# TO DO: write in an algorithm to find the start and end times.
-
-			SemStartTime, SemEndTime = findTrueTime(row[4].text.strip())
-			SemLocation = c.location(row[6].text.strip())
-			SemInstructor = c.teacher(row[7].text.strip())
-
-			tempGroup = c.group(SemClassNumber, SemType, SemDays, SemStartTime, SemEndTime, SemLocation, SemInstructor)
+	coenroll = False
 
 
-			# tempGroup is added to lisfOfGroups
-			listOfGroups.append(tempGroup)
+	# This sections tests for coenrollment. It does this by seeing if there is a group message on the website. If there is,
+	# then we need to see if the message is one of the messages that indicates that coenrollment is necessary.
+
+	gm = (courseBlk.find("div", {"class" : "groupMessage"}))
+
+	if (gm != None):
+		name = courseBlk.find("span", {"class" : "courseTitle"}).text.strip()
+		message = gm.find("p").text.strip()
+		if (message == "Enrollment required for SEM,LAB in this group of sections.") or (message == "Enrollment required for LEC,LAB in this group of sections."):
+			coenroll = True
+			print(name + "    " + message)
 
 
-
-	elif (isLAB == True):
-		#print("The course " + (courseBlk.find("span", {"class" : "courseTitle"})).text.strip() + " (" + (courseBlk.find("span", {"class" : "courseCode"})).text.strip() + ") does NOT have GROUPS but HAS LABS")
-
-		# This gets both rows that are on the website, and saves them as semRow and labRow
-
-		table = courseBlk.findAll("tr")
-
-		semRow = table[1].findAll("td")
-		labRow = table[2].findAll("td")
-
-
-
-
-
-		# we now get the data needed for tempGroup
-
-		SemClassNumber = semRow[0].text.strip()
-		SemType = semRow[2].text.strip()
-		SemDays = semRow[3].text.strip()
-
-		# TO DO: write in an algorithm to find the start and end times.
-
-		SemStartTime, SemEndTime = findTrueTime(semRow[4].text.strip())
-		SemLocation = c.location(semRow[6].text.strip())
-		SemInstructor = c.teacher(semRow[7].text.strip())
-
-
-		LabClassNumber = labRow[0].text.strip()
-		LabType = labRow[2].text.strip()
-		LabDays = labRow[3].text.strip()
-
-		# TO DO: write in an algorithm to find the start and end times.
-
-		LabStartTime, LabEndTime = findTrueTime(labRow[4].text.strip())
-		LabLocation = c.location(labRow[6].text.strip())
-		LabInstructor = c.teacher(labRow[7].text.strip())
-
-		tempGroup = c.group(SemClassNumber, SemType, SemDays, SemStartTime, SemEndTime, SemLocation, SemInstructor, LabClassNumber, LabType, LabDays, LabStartTime, LabEndTime, LabLocation, LabInstructor)
-
-		listOfGroups.append(tempGroup)
-
-	else:
-		#print("The course " + (courseBlk.find("span", {"class" : "courseTitle"})).text.strip() + " (" + (courseBlk.find("span", {"class" : "courseCode"})).text.strip() + ") HAS GROUPS")
-		
-		# We will get all the section tables that are in each course block and put them in a list.
-		# For each section table, we will essentailly do the exact same thing we did in the block of code above
-
+	if coenroll:
+		# Since we know that coenrollment is required, we now need to go through every section table and create the section objects
 		listOfSectionTables = courseBlk.findAll("table", {"class" : "sectionTable"})
 
-		for st in listOfSectionTables:
-			st = st.findAll("tr")
+		#Now, we need to find which spot in the table all of our variables are in. We need to store:
+		for table in listOfSectionTables:
+			for rowNum in range(0,len(table)-1):
+				if rowNum == 0:
+					SecNumSpot = findSpot("SEC.",table)
+					ClassNumSpot = findSpot("CLASS #", table)
+					TypeSpot = findSpot("TYPE", table)
+					DaysSpot = findSpot("DAYS", table)
+					TimeSpot = findSpot("TIME", table)
+					LocationSpot = findSpot("LOCATION", table)
+					InstructorSpot = findSpot("INSTRUCTOR", table)
 
-			semRow = st[1].findAll("td")
-			labRow = st[2].findAll("td")
+					
 
-
-			# we now get the data needed for tempGroup
-
-			SemClassNumber = semRow[0].text.strip()
-			SemType = semRow[2].text.strip()
-			SemDays = semRow[3].text.strip()
-
-			# TO DO: write in an algorithm to find the start and end times.
-
-			SemStartTime, SemEndTime = findTrueTime(semRow[4].text.strip())
-			SemLocation = c.location(semRow[6].text.strip())
-			SemInstructor = c.teacher(semRow[7].text.strip())
-
-
-			LabClassNumber = labRow[0].text.strip()
-			LabType = labRow[2].text.strip()
-			LabDays = labRow[3].text.strip()
-
-			# TO DO: write in an algorithm to find the start and end times.
-
-			LabStartTime, LabEndTime = findTrueTime(labRow[4].text.strip())
-			LabLocation = c.location(labRow[6].text.strip())
-			LabInstructor = c.teacher(labRow[7].text.strip())
-
-			tempGroup = c.group(SemClassNumber, SemType, SemDays, SemStartTime, SemEndTime, SemLocation, SemInstructor, LabClassNumber, LabType, LabDays, LabStartTime, LabEndTime, LabLocation, LabInstructor)
-
-			listOfGroups.append(tempGroup)
-
-
-
-
-
-
-		#listOfGroups.append(tempGroup)
-
-	
 	return listOfGroups
 
 
@@ -339,5 +221,15 @@ def stripUnits(tempUnits):
 	return tempUnits
 
 
+
+
+
+def findSpot(kw, table):
+	listOfth = table.findAll("th")
+	spot = 0
+	for th in listOfth:
+		if th.text.strip() == kw:
+			return spot
+		spot = spot + 1
 
 
