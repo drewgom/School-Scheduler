@@ -1,32 +1,3 @@
-'''
-Essential functions:
-	getCourses:
-		- webscrapes the course catalog, returns a list of course objects with all the data filled out
-	getGroups:
-		- takes a course and returns an array of all the sections that students can sign up for
-
-
-Helpful functions:
-
-
-
-
-
-
-
-
-'''
-
-
-
-
-
-###############################################################################################################################
-###############################################################################################################################
-#------------------------------------------------------ESSENTIAL FUNCTIONS----------------------------------------------------#
-###############################################################################################################################
-###############################################################################################################################
-
 def getCourses(dpt,trm,yr):
 	import c
 	from urllib.request import urlopen as uReq
@@ -48,87 +19,61 @@ def getCourses(dpt,trm,yr):
 	# tempCBL = a list that has every course block from the page
 	tempCBL = page_soup.findAll("div", {"class" : "courseBlock"})
 
+	index = 0
 	for courseBlk in tempCBL:
+
+		if index > 0:
+			break
+
 		courseName = (courseBlk.find("span", {"class" : "courseTitle"})).text.strip()
 		courseNumber = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
 		units = stripUnits((courseBlk.find("span", {"class" : "units"})).text.strip())
 
-		listOfGroups = getGroups(courseBlk)
+		listOfSections = getSections(courseBlk)
 
 		#constructs a temporary course obejct that is the current course we just grabbed saved as an object
 
-		#TO DO: add "listOfGroups" to constructor
-		tempCourse = c.course("CSULB",trm,yr,dpt,courseName,courseNumber,units,listOfGroups)
+		#TO DO: add "listOfSections" to constructor
+		tempCourse = c.course("CSULB",trm,yr,dpt,courseName,courseNumber,units,listOfSections)
 		listOfCourses.append(tempCourse)
 
+		print(tempCourse.courseName)
+		print(" ")
+		print(" ")
+		print(" ")
+		print(" ")
+		index += 1
 
 	return listOfCourses
 
 
-def getGroups(courseBlk):
-	import c
-
-	#declares the list of groups that gets returned later on
-	listOfGroups = []
-
-	# We need to determine if we need to enroll in a lab for this course as well. We can
-	# do this by checking for these phrases in the course block's group message:
-	# 	- 'Enrollment required for SEM,LAB in this group of sections.' or 
-	# 	- 'Enrollment required for LEC,LAB in this group of sections.'
-
-	# If neither of those phrases are in the group message, then we are able to scrape the sections by themeselves. Otherwise,
-	# coenrollment is required, thus every section needs to have a list of the courses that the student can coenroll in. Every SEM or
-	# LEC can be coenrolled to any of the labs in its section table.
-	
-	# We do this by creating a boolean. If it finds that coenrollment is required, then we have to do the code that links the labs to
-	# their seminar or lecture.
-
-	coenroll = False
-
-
-	# This sections tests for coenrollment. It does this by seeing if there is a group message on the website. If there is,
-	# then we need to see if the message is one of the messages that indicates that coenrollment is necessary.
-
-	gm = (courseBlk.find("div", {"class" : "groupMessage"}))
-
-	if (gm != None):
-		name = courseBlk.find("span", {"class" : "courseTitle"}).text.strip()
-		message = gm.find("p").text.strip()
-		if (message == "Enrollment required for SEM,LAB in this group of sections.") or (message == "Enrollment required for LEC,LAB in this group of sections."):
-			coenroll = True
-			print(name + "    " + message)
-
-
-	if coenroll:
-		# Since we know that coenrollment is required, we now need to go through every section table and create the section objects
-		listOfSectionTables = courseBlk.findAll("table", {"class" : "sectionTable"})
-
-		#Now, we need to find which spot in the table all of our variables are in. We need to store:
-		for table in listOfSectionTables:
-			for rowNum in range(0,len(table)-1):
-				if rowNum == 0:
-					SecNumSpot = findSpot("SEC.",table)
-					ClassNumSpot = findSpot("CLASS #", table)
-					TypeSpot = findSpot("TYPE", table)
-					DaysSpot = findSpot("DAYS", table)
-					TimeSpot = findSpot("TIME", table)
-					LocationSpot = findSpot("LOCATION", table)
-					InstructorSpot = findSpot("INSTRUCTOR", table)
-
-					
-
-	return listOfGroups
 
 
 
-###############################################################################################################################
-###############################################################################################################################
-#-------------------------------------------------------HELPFUL FUNCTIONS-----------------------------------------------------#
-###############################################################################################################################
-###############################################################################################################################
 
-# The times on the website are stored as one string. This needs to be seperated in to two seperate variables for later,
-# when we are trying to compare the start time and end time
+
+
+
+
+
+
+
+def getSections(courseBlk):
+	# The first thing we are going to do once we recieve a course block is to turn it in to a list of tables. This is becuase 
+	# Each table is a self-contained group, so typically if coenrollemnt is required, then it is allowed within the group
+
+	listOfTables = courseBlk.findAll("table" , {"class" : "sectionTable"})
+
+	# Since python creates an iterator when using a for loop, I decided to just use a while loop so that I could modify each
+	# table object in the list.
+	for i in range(len(listOfTables)):
+		listOfTables[i] = makeTableToList(listOfTables[i])
+
+	print(listOfTables[0][1][10])
+
+
+
+
 def findTrueTime(stringTime):
 
 	startTime = "Start"
@@ -204,6 +149,11 @@ def findTrueTime(stringTime):
 	return startTime, endTime
 
 
+
+
+
+
+
 def printCoursesInList(listOfCourses):
 	
 
@@ -214,6 +164,9 @@ def printCoursesInList(listOfCourses):
 # the amount of units comes off of the website as "X Units". I would rather have this saved as
 # an int.
 
+
+
+
 def stripUnits(tempUnits):
 
 	tempUnits = tempUnits[0]
@@ -221,15 +174,36 @@ def stripUnits(tempUnits):
 	return tempUnits
 
 
+'''
+def makeTableToList(htmlTable):
+	tableAsList = []
+	htmlrows = htmlTable.findAll('tr')
+	for htmlrow in htmlrows:
+		htmlths = htmlrow.findAll('th')
+		htmltds = htmlrow.findAll('')
+
+		tableAsList.append(row)
+	return tableAsList
+'''
 
 
 
-def findSpot(kw, table):
-	listOfth = table.findAll("th")
-	spot = 0
-	for th in listOfth:
-		if th.text.strip() == kw:
-			return spot
-		spot = spot + 1
+def makeTableToList(htmlTable):
+	tableAsList = []
+	htmlrows = htmlTable.findAll('tr')
+	#index = 0
+	for htmlrow in htmlrows:
+		rowAsList = []
+		htmlths = htmlrow.findAll('th')
+		htmltds = htmlrow.findAll('td')
+		for th in htmlths:
+			thToBeAdded = th.text.strip()
+			rowAsList.append(thToBeAdded)
+		for td in htmltds:
+			tdToBeAdded = td.text.strip()
+			rowAsList.append(tdToBeAdded)
 
 
+		tableAsList.append(rowAsList)
+
+	return tableAsList
