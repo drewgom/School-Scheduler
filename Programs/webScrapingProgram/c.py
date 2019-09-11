@@ -55,7 +55,7 @@ class course:
 
 
 	# defines the constructor
-	def __init__(self,school,term,year,department,courseName,courseNumber,units,listOfGroups):
+	def __init__(self,school,term,year,department,courseName,courseNumber,units,listOfSections):
 		self.school = school
 		self.term = term
 		self.year = year
@@ -63,47 +63,24 @@ class course:
 		self.courseName = courseName
 		self.courseNumber = courseNumber
 		self.units = units
-		self.listOfGroups = listOfGroups
+		self.listOfSections = listOfSections
 
 
 
 
-class group:
+class section:
 
 	
 
-	def __init__(self,
-			SemClassNumber, 
-			SemType, 
-			SemDays, 
-			SemStartTime, 
-			SemEndTime, 
-			SemLocation, 
-			SemInstructor,
-			LabClassNumber = None,
-			LabType = None,
-			LabDays = None,
-			LabStartTime = None,
-			LabEndTime = None,
-			LabLocation = None,
-			LabInstructor = None):
-
-
-		self.SemClassNumber = SemClassNumber
-		self.SemType = SemType
-		self.SemDays = SemDays
-		self.SemStartTime = SemStartTime
-		self.SemEndTime = SemEndTime
-		self.SemLocation = SemLocation
-		self.SemInstructor = SemInstructor
-		self.LabClassNumber = LabClassNumber
-		self.LabType = LabType
-		self.LabDays = LabDays
-		self.LabStartTime = LabStartTime
-		self.LabEndTime = LabEndTime
-		self.LabLocation = LabLocation
-		self.LabInstructor = LabInstructor
-
+	def __init__(self,classNumber,sectionType,days,startTime,endTime,location,instructor):
+		self.classNumber = classNumber
+		self.sectionType = sectionType
+		self.days = days
+		self.startTime = startTime
+		self.endTime = endTime
+		self.location = location
+		self.instructor = instructor
+		# self.coenrolledSections = coenrolledSections
 
 
 class location:
