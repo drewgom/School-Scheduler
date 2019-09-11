@@ -1,5 +1,5 @@
 def getCourses(dpt,trm,yr):
-	import c
+	from c import course
 	from urllib.request import urlopen as uReq
 	from bs4 import BeautifulSoup as soup
 
@@ -28,20 +28,13 @@ def getCourses(dpt,trm,yr):
 		courseName = (courseBlk.find("span", {"class" : "courseTitle"})).text.strip()
 		courseNumber = (courseBlk.find("span", {"class" : "courseCode"})).text.strip()
 		units = stripUnits((courseBlk.find("span", {"class" : "units"})).text.strip())
-
 		listOfSections = getSections(courseBlk)
 
 		#constructs a temporary course obejct that is the current course we just grabbed saved as an object
-
-		#TO DO: add "listOfSections" to constructor
-		tempCourse = c.course("CSULB",trm,yr,dpt,courseName,courseNumber,units,listOfSections)
+		tempCourse = course("CSULB",trm,yr,dpt,courseName,courseNumber,units,listOfSections)
+		for section in tempCourse.listOfSections:
+			print(section.sectionType)
 		listOfCourses.append(tempCourse)
-
-		print(tempCourse.courseName)
-		print(" ")
-		print(" ")
-		print(" ")
-		print(" ")
 		index += 1
 
 	return listOfCourses
@@ -49,19 +42,12 @@ def getCourses(dpt,trm,yr):
 
 
 
-
-
-
-
-
-
-
-
-
 def getSections(courseBlk):
+	from c import section
+
 	# The first thing we are going to do once we recieve a course block is to turn it in to a list of tables. This is becuase 
 	# Each table is a self-contained group, so typically if coenrollemnt is required, then it is allowed within the group
-
+	listOfSections = []
 	listOfTables = courseBlk.findAll("table" , {"class" : "sectionTable"})
 
 	# Since python creates an iterator when using a for loop, I decided to just use a while loop so that I could modify each
@@ -69,8 +55,29 @@ def getSections(courseBlk):
 	for i in range(len(listOfTables)):
 		listOfTables[i] = makeTableToList(listOfTables[i])
 
-	print(listOfTables[0][1][10])
+	# Once you get the list of tables, we need to construct each section.
+	for table in listOfTables:
+		headerRow = table[0]
+		classNumberIndex = headerRow.index('CLASS #')
+		sectionTypeIndex = headerRow.index('TYPE')
+		daysIndex = headerRow.index('DAYS')
+		timeIndex = headerRow.index('TIME')
+		locationIndex = headerRow.index('LOCATION')
+		instructorIndex = headerRow.index('INSTRUCTOR')
 
+
+		for i in range(1,len(table)):
+			stime, etime = findTrueTime(table[i][timeIndex])
+			tempSection = section(classNumber = table[i][classNumberIndex],
+								sectionType = table[i][sectionTypeIndex], 
+								days = table[i][daysIndex], 
+								startTime = stime, endTime = etime, 
+								location = table[i][locationIndex], 
+								instructor = table[i][instructorIndex])
+
+			listOfSections.append(tempSection)
+
+	return listOfSections
 
 
 
@@ -173,18 +180,6 @@ def stripUnits(tempUnits):
 	tempUnits = int(tempUnits)
 	return tempUnits
 
-
-'''
-def makeTableToList(htmlTable):
-	tableAsList = []
-	htmlrows = htmlTable.findAll('tr')
-	for htmlrow in htmlrows:
-		htmlths = htmlrow.findAll('th')
-		htmltds = htmlrow.findAll('')
-
-		tableAsList.append(row)
-	return tableAsList
-'''
 
 
 
