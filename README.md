@@ -9,18 +9,11 @@ This project was created to help students create an optimal school schedule. Whi
 	7. Minimizing the number of days on campus
 
 ## How it works
-So, based off of how important these things are to you, this will try an optimize the performance.
-
-There are 3 categories that I put things in:
-	- MUST HAVE
-	- WOULD LIKE
-	- DOES NOT CARE
+So, based off of how important these things are to you, this will try an optimize the performance. When the project is completed, you should be able to give a certain weight to each of these parameters, and then using the weights, 
 
 ## Getting the data:
-I used web scraping to get the data used in this program. Since every school has different websites, I created a different file for each school. In the future, I think that I could potentially have different contributors that just followed a basic format for their own school’s info to be scraped, and then added to the database using functions in files we already have. This way, that reduced the work I have to do in the future. 
+I used web scraping to get the data used in this program. Since every school has different websites, I would have to create a different web scraper for each school.
 
 Since I go to CSULB, the first school used was CSULB.
 
-The file `csulb_scraper.py` will have a main function. 
-
-The most important function in any scraper file is the `getCourses()` function. This returns an array of `course` objects.
+The file `csulb_scraper.py` will have a main function. When that gets run, then the user will have a CSV saved with the sections offered by a specificed subject in a specified semester
